@@ -45,6 +45,50 @@
       "Instagram for visual portfolio",
       "Email newsletters"
     ],
-    "land_expand": "Cross-sell opportunities with sister companies."
+    "land_expand": "Cross-sell opportunities with sister companies.",
+    "lead_growth_recommendations": {
+      "overview": "Splitbeam’s growth is driven by clarity around long-term rental as a strategic alternative to ownership. Its audience values predictability, continuity, and technical confidence.",
+      "focus_areas": [
+        "Reinforce long-term rental as an operational strategy",
+        "Deepen trust within theatre and education networks",
+        "Maintain specialist positioning"
+      ],
+      "channel_copy": "This messaging should live primarily within direct relationships, the website, and materials used to support long-term rental discussions. It should not rely on broad media. Copy should emphasise stability, budget predictability, and operational continuity, reinforcing trust rather than urgency.",
+      "expected_outcomes": [
+        "Highly qualified, long-term rental enquiries",
+        "Reduced transactional demand",
+        "Increased lifetime client value"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "Splitbeam’s lead quality is strong, but discovery is heavily relationship-led and assumes prior understanding of long-term rental benefits.\n\nThis limits growth to existing networks and slows adoption among adjacent buyers experiencing the same operational pain.",
+      "intervention": "BroadBrand would help reframe Splitbeam’s offering around predictability, lifecycle cost control, and operational stability.\n\nMessaging would contrast long-term rental against short-term hire, helping buyers self-identify earlier in the decision journey.\n\nThis would be done without expanding channels, focusing on clarity within existing validation touchpoints.",
+      "practical_support": [
+        {
+          "title": "Positioning & Message Architecture",
+          "description": "Clear articulation of long-term rental as a strategic operating decision."
+        },
+        {
+          "title": "Audience Intelligence",
+          "description": "Mapping theatre, education, and long-run production motivators."
+        },
+        {
+          "title": "Journey Design",
+          "description": "Accelerating movement from enquiry to partnership discussion."
+        },
+        {
+          "title": "Creative Optimisation (CreativePlus)",
+          "description": "Iterating copy that reinforces trust and continuity."
+        },
+        {
+          "title": "Outcome Measurement",
+          "description": "Optimising against lifetime value, not lead volume."
+        }
+      ],
+      "lead_quality_shift": [
+        "Earlier, better-qualified enquiries.",
+        "Higher lifetime value without increased volume."
+      ]
+    }
   }
 }

@@ -73,6 +73,51 @@
     "additional_channels": [
       "Audit Rec: No broader channel expansion required."
     ],
-    "land_expand": "LED screen requirements often trigger additional needs across structures, staging, audio, power, and broadcast support."
+    "land_expand": "LED screen requirements often trigger additional needs across structures, staging, audio, power, and broadcast support.",
+    "lead_growth_recommendations": {
+      "overview": "LEDvision performs best when positioned as the partner that protects visual impact in high-pressure, public-facing environments. Growth comes from trust and execution certainty, not experimentation.",
+      "focus_areas": [
+        "Align earlier with creative and production planning conversations",
+        "Reinforce reliability in uncontrolled environments",
+        "Deepen integration into Gearhouse-led event delivery"
+      ],
+      "channel_copy": "Messaging should appear within production ecosystems where trust is established, such as proposals, case validation, and targeted industry visibility. It should not aim for mass reach. Copy should emphasise certainty, redundancy, and delivery under pressure, reinforcing confidence rather than showcasing novelty.",
+      "expected_outcomes": [
+        "Higher-value production briefs",
+        "Fewer last-minute, high-risk engagements",
+        "Stronger reputation as a dependable delivery partner"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "LEDvision is trusted for execution but often engaged after creative and production decisions are finalised.\n\nThis increases risk exposure and limits influence over project scope.",
+      "intervention": "BroadBrand would help shift LEDvision upstream, reinforcing its role as a planning-stage partner focused on certainty under pressure.\n\nMessaging would align LEDvision more closely with Gearhouse-led delivery narratives.",
+      "practical_support": [
+        {
+          "title": "Positioning & Message Architecture",
+          "description": "Certainty, redundancy, and execution confidence framing."
+        },
+        {
+          "title": "Audience Intelligence",
+          "description": "Understanding producer and creative decision timelines."
+        },
+        {
+          "title": "Journey Design",
+          "description": "Earlier involvement before production lock-in."
+        },
+        {
+          "title": "Creative Optimisation (CreativePlus)",
+          "description": "Reassurance-led, credibility-focused creative."
+        },
+        {
+          "title": "Outcome Measurement",
+          "description": "Optimising for scope quality, not urgency volume."
+        }
+      ],
+      "lead_quality_shift": [
+        "Earlier engagement.",
+        "Fewer last-minute, high-risk briefs.",
+        "Higher-value production roles."
+      ]
+    }
   }
 }

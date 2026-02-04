@@ -74,6 +74,47 @@
     "additional_channels": [
       "Audit Rec: No broader channel expansion required. Priority on minimal validation surface."
     ],
-    "land_expand": "Communications infrastructure underpins every other delivery discipline, particularly in high-risk, live environments."
+    "land_expand": "Communications infrastructure underpins every other delivery discipline, particularly in high-risk, live environments.",
+    "lead_growth_recommendations": {
+      "overview": "ShowCom’s growth is driven internally through integration rather than external demand. Its value is maximised when positioned as a critical coordination and safety layer.",
+      "focus_areas": [
+        "Strengthen internal routing through Gearhouse",
+        "Clarify ShowCom’s role in failure prevention",
+        "Avoid independent lead generation"
+      ],
+      "channel_copy": "Messaging should live internally within group workflows, proposals, and delivery documentation. It should clarify responsibility and coordination rather than attract external leads. Copy should reinforce reliability and clarity under pressure.",
+      "expected_outcomes": [
+        "More consistent inclusion in complex projects",
+        "Improved operational outcomes",
+        "Increased group-wide value contribution"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "ShowCom’s value is largely invisible externally and under-articulated internally.\n\nThis limits its strategic influence despite its operational importance.",
+      "intervention": "BroadBrand would formalise ShowCom’s role within the Gearhouse narrative as a coordination and risk-mitigation layer.\n\nMessaging would be embedded into group-level proposals and delivery logic.",
+      "practical_support": [
+        {
+          "title": "Positioning & Narrative Architecture",
+          "description": "Clarifying ShowCom’s internal strategic role."
+        },
+        {
+          "title": "Journey Design",
+          "description": "Embedding ShowCom earlier in delivery planning."
+        },
+        {
+          "title": "Creative Optimisation (CreativePlus)",
+          "description": "Internal-facing clarity and reinforcement."
+        },
+        {
+          "title": "Outcome Measurement",
+          "description": "Optimising for consistency of inclusion."
+        }
+      ],
+      "lead_quality_shift": [
+        "More consistent inclusion.",
+        "Improved delivery outcomes.",
+        "Increased group-wide value contribution."
+      ]
+    }
   }
 }

@@ -74,6 +74,50 @@
     "additional_channels": [
       "Audit Rec: No broader channel expansion required."
     ],
-    "land_expand": "Venues with embedded technical partners often evolve into hosts for larger, more complex events requiring broader production capability."
+    "land_expand": "Venues with embedded technical partners often evolve into hosts for larger, more complex events requiring broader production capability.",
+    "lead_growth_recommendations": {
+      "overview": "IVTM grows when positioned as an operating model choice rather than a service provider. Demand improves when continuity and risk transfer are clearly articulated.",
+      "focus_areas": [
+        "Reframe IVTM as a replacement for in-house technical operations",
+        "Target multi-venue and long-term operational partnerships",
+        "Emphasise institutional knowledge and accountability"
+      ],
+      "channel_copy": "Messaging should live in the website, proposal framing, and direct engagement with venue operators and groups. It should support long-term partnership discussions rather than generate high enquiry volume. Copy should focus on uptime, reputational protection, and operational stability.",
+      "expected_outcomes": [
+        "Fewer but more strategic leads",
+        "Longer contract durations",
+        "Stronger expansion into broader Gearhouse capabilities"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "IVTM consistently reaches the right organisation, but engagement typically happens too late in the decision lifecycle.\n\nMost enquiries are triggered by operational strain, technical failure, or reputational risk events rather than proactive planning.\n\nThis positions IVTM as a reactive fix instead of a strategic operating partner.",
+      "intervention": "BroadBrand would reposition IVTM around continuity, risk transfer, and operational certainty, aligned to venue decision-maker motivations.\n\nMessaging would be restructured to surface IVTM earlier, when operational models are being evaluated rather than repaired.\n\nIVTM would be clearly positioned as a permanent operating partner within the Gearhouse Group.",
+      "practical_support": [
+        {
+          "title": "Positioning & Message Architecture",
+          "description": "Risk-reduction and continuity framing for embedded operations."
+        },
+        {
+          "title": "Audience & Decision-Maker Intelligence",
+          "description": "Understanding venue owner and operator decision drivers."
+        },
+        {
+          "title": "Journey & Conversion Design",
+          "description": "Encouraging earlier engagement before failure-driven triggers."
+        },
+        {
+          "title": "Creative & Content Optimisation (CreativePlus)",
+          "description": "Trust-building, reassurance-led creative."
+        },
+        {
+          "title": "Measurement & Outcome Ownership",
+          "description": "Optimisation against contract length and lead intent."
+        }
+      ],
+      "lead_quality_shift": [
+        "Fewer reactive enquiries.",
+        "More planned, long-term operational partnerships with expansion potential."
+      ]
+    }
   }
 }

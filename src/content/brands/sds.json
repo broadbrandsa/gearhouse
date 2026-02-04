@@ -73,6 +73,51 @@
     "additional_channels": [
       "Audit Rec: No broader channel expansion required."
     ],
-    "land_expand": "Scenic environments are rarely standalone. They often trigger needs across staging, lighting, LED screens, and structural elements."
+    "land_expand": "Scenic environments are rarely standalone. They often trigger needs across staging, lighting, LED screens, and structural elements.",
+    "lead_growth_recommendations": {
+      "overview": "SDS grows when it is involved early enough to influence feasibility and execution, not only build delivery. Lead quality improves when creative ambition is balanced with practical certainty.",
+      "focus_areas": [
+        "Engage earlier in concept development",
+        "Reinforce execution reliability",
+        "Strengthen integration with agencies and Gearhouse proposals"
+      ],
+      "channel_copy": "Messaging should live within agency-facing materials, proposal support, and website validation. It should assist creative teams in making buildable decisions. Copy should emphasise feasibility, reliability, and execution confidence rather than creative direction.",
+      "expected_outcomes": [
+        "Better-prepared briefs",
+        "Reduced scope creep and last-minute changes",
+        "Higher repeat engagement"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "SDS is frequently engaged after creative ambition is already defined, limiting feasibility influence.\n\nThis increases scope pressure and execution risk.",
+      "intervention": "BroadBrand would reposition SDS as an early-stage feasibility and execution partner.\n\nMessaging would help agencies and creatives balance ambition with buildability.",
+      "practical_support": [
+        {
+          "title": "Positioning & Message Architecture",
+          "description": "Execution confidence and feasibility framing."
+        },
+        {
+          "title": "Audience Intelligence",
+          "description": "Understanding agency and production workflows."
+        },
+        {
+          "title": "Journey Design",
+          "description": "Earlier creative collaboration points."
+        },
+        {
+          "title": "Creative Optimisation (CreativePlus)",
+          "description": "Clarity-led, execution-focused creative."
+        },
+        {
+          "title": "Outcome Measurement",
+          "description": "Optimising for repeat agency engagement."
+        }
+      ],
+      "lead_quality_shift": [
+        "Better-prepared briefs.",
+        "Reduced scope creep.",
+        "Stronger repeat relationships."
+      ]
+    }
   }
 }

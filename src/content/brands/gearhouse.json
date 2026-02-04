@@ -73,6 +73,50 @@
     "additional_channels": [
       "Audit Rec: No broader channel expansion required."
     ],
-    "land_expand": "Many Gearhouse clients begin with a specific problem but later encounter additional needs across staging, structures, AV, communications, or long-term infrastructure."
+    "land_expand": "Many Gearhouse clients begin with a specific problem but later encounter additional needs across staging, structures, AV, communications, or long-term infrastructure.",
+    "lead_growth_recommendations": {
+      "overview": "Gearhouse’s lead growth opportunity lies in positioning itself as the point where fragmented supplier models stop working. Demand should be attracted at the moment clients realise that complexity, risk, and accountability can no longer be managed through coordination alone.",
+      "focus_areas": [
+        "Establish Gearhouse as the default entry point for complex, high-stakes briefs",
+        "Shift messaging from services provided to responsibility assumed",
+        "Create intentional pathways from group-level engagement into specialist brands"
+      ],
+      "channel_copy": "This messaging should primarily live at the group level, across the main Gearhouse website and senior-facing touchpoints. It should be used selectively in channels where decision-makers seek reassurance rather than discovery, such as direct outreach, proposal framing, and targeted visibility to senior stakeholders. Copy should focus on owning outcomes, absorbing risk, and simplifying delivery, rather than enumerating capabilities. The role of content is to build confidence, not generate volume.",
+      "expected_outcomes": [
+        "Earlier engagement in complex briefs before supplier structures are fixed",
+        "Higher-quality enquiries that naturally span multiple group capabilities",
+        "Reduced price sensitivity through clearer accountability and risk transfer"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "Gearhouse is trusted for delivery at scale, but is often engaged after clients have already fragmented responsibility across multiple suppliers.\n\nBy the time Gearhouse enters the conversation, complexity, risk, and accountability are already high, limiting its ability to shape the overall solution from the outset.\n\nThis positions Gearhouse as an integrator of complexity rather than the default entry point that removes it.",
+      "intervention": "BroadBrand would help reposition Gearhouse as the starting point for complex, high-stakes briefs by reframing its role around accountability, risk ownership, and simplification.\n\nWe would translate Gearhouse’s full-stack capability into clearer, problem-led narratives that resonate at executive and procurement level, where responsibility and outcome ownership matter most.\n\nThis includes structuring group-level messaging so specialist brands are positioned as deliberate extensions of a single accountable delivery model.",
+      "practical_support": [
+        {
+          "title": "Group Positioning & Narrative Architecture",
+          "description": "Defining Gearhouse as the single point of accountability for complex delivery, not just a collection of services."
+        },
+        {
+          "title": "Audience & Decision-Maker Intelligence",
+          "description": "Mapping senior buyer motivations around risk, governance, and delivery certainty to guide group-level messaging."
+        },
+        {
+          "title": "Journey & Demand Architecture",
+          "description": "Designing clear entry points that allow clients to engage early before supplier structures are fixed."
+        },
+        {
+          "title": "Creative & Message Optimisation (CreativePlus)",
+          "description": "Continuously refining group narratives that reinforce trust, scale, and outcome ownership."
+        },
+        {
+          "title": "Measurement & Outcome Ownership",
+          "description": "Optimising against qualified, multi-discipline opportunities rather than enquiry volume."
+        }
+      ],
+      "lead_quality_shift": [
+        "Gearhouse would engage earlier, with higher-value briefs that naturally span multiple capabilities.",
+        "Leads would arrive pre-aligned to outcome ownership, reducing fragmentation and increasing commercial leverage."
+      ]
+    }
   }
 }

@@ -74,6 +74,51 @@
     "additional_channels": [
       "Audit Rec: No broader channel expansion required."
     ],
-    "land_expand": "Audience infrastructure decisions often trigger additional needs across staging, structures, lighting, and production management."
+    "land_expand": "Audience infrastructure decisions often trigger additional needs across staging, structures, lighting, and production management.",
+    "lead_growth_recommendations": {
+      "overview": "Havaseat’s growth is driven by buyers who prioritise safety, compliance, and audience experience. Its value increases when seating is framed as engineered infrastructure.",
+      "focus_areas": [
+        "Strengthen differentiation around compliance and safety",
+        "Reinforce speed and reliability of deployment",
+        "Avoid commoditisation"
+      ],
+      "channel_copy": "Messaging should appear within event planning discussions, proposal documentation, and website validation. It should reassure decision-makers around safety and compliance. Copy should be calm, authoritative, and risk-focused rather than promotional.",
+      "expected_outcomes": [
+        "Higher-quality, compliance-driven engagements",
+        "Reduced price-led conversations",
+        "Stronger specialist positioning"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "Havaseat risks being evaluated as a seating supplier rather than engineered infrastructure.\n\nThis increases price sensitivity and commoditisation.",
+      "intervention": "BroadBrand would reinforce Havaseat’s role as a compliance-critical, safety-driven infrastructure partner.\n\nMessaging would align with decision-makers motivated by risk avoidance and audience experience.",
+      "practical_support": [
+        {
+          "title": "Positioning & Message Architecture",
+          "description": "Safety, compliance, and engineering authority."
+        },
+        {
+          "title": "Audience Intelligence",
+          "description": "Understanding event safety and compliance drivers."
+        },
+        {
+          "title": "Journey Design",
+          "description": "Engagement before procurement commoditisation."
+        },
+        {
+          "title": "Creative Optimisation (CreativePlus)",
+          "description": "Authority-focused, reassurance-led creative."
+        },
+        {
+          "title": "Outcome Measurement",
+          "description": "Optimising for compliance-driven leads."
+        }
+      ],
+      "lead_quality_shift": [
+        "Higher-quality engagements.",
+        "Lower price sensitivity.",
+        "Stronger specialist positioning."
+      ]
+    }
   }
 }

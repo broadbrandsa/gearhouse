@@ -379,6 +379,110 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                             )}
                         </div>
                     </div>
+
+                    {brand.sections.lead_growth_recommendations && (
+                        <div className="mt-12 pt-12 border-t border-panel-border/30">
+                            <h3 className="text-sm font-black uppercase tracking-widest mb-8 text-white">Lead Growth Recommendations</h3>
+
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
+                                <div className="lg:col-span-8">
+                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-3">Overview</h4>
+                                    <p className="text-sm text-gray-300 leading-relaxed max-w-3xl">
+                                        {brand.sections.lead_growth_recommendations.overview}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                                <div className="bg-background-dark/30 border border-panel-border rounded-lg p-6">
+                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-4 flex items-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">filter_center_focus</span> Recommended Focus Areas
+                                    </h4>
+                                    <ul className="space-y-3">
+                                        {brand.sections.lead_growth_recommendations.focus_areas.map((area, idx) => (
+                                            <li key={idx} className="flex items-start gap-3 text-sm text-gray-400">
+                                                <span className="material-symbols-outlined text-primary text-base leading-none translate-y-0.5">check</span>
+                                                <span>{area}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="bg-background-dark/30 border border-panel-border rounded-lg p-6">
+                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-4 flex items-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">trending_up</span> Expected Outcomes
+                                    </h4>
+                                    <ul className="space-y-3">
+                                        {brand.sections.lead_growth_recommendations.expected_outcomes.map((outcome, idx) => (
+                                            <li key={idx} className="flex items-start gap-3 text-sm text-gray-400">
+                                                <span className="material-symbols-outlined text-primary text-base leading-none translate-y-0.5">arrow_forward</span>
+                                                <span>{outcome}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-primary/5 border border-primary/10 rounded-lg p-6">
+                                <h4 className="text-[10px] font-bold text-primary uppercase mb-3 flex items-center gap-2">
+                                    <span className="material-symbols-outlined text-sm">campaign</span> Channel & Copy Recommendations
+                                </h4>
+                                <p className="text-xs text-gray-400 leading-relaxed font-mono">
+                                    {brand.sections.lead_growth_recommendations.channel_copy}
+                                </p>
+                            </div>
+                        </div>
+                    )}
+
+                    {brand.sections.broadbrand_intervention && (
+                        <div className="mt-12 pt-12 border-t border-panel-border/30">
+                            <h3 className="text-sm font-black uppercase tracking-widest mb-8 text-white">How BroadBrand Helps Turn This Audit Into Qualified Lead Growth</h3>
+
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+                                <div>
+                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-3">Current Growth Constraint</h4>
+                                    <p className="text-sm text-gray-300 leading-relaxed whitespace-pre-wrap">
+                                        {brand.sections.broadbrand_intervention.constraint}
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-3">BroadBrand Intervention</h4>
+                                    <p className="text-sm text-gray-300 leading-relaxed whitespace-pre-wrap">
+                                        {brand.sections.broadbrand_intervention.intervention}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
+                                <div className="lg:col-span-7">
+                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-4">How BroadBrand Supports This in Practice</h4>
+                                    <ul className="space-y-6">
+                                        {brand.sections.broadbrand_intervention.practical_support.map((item, idx) => (
+                                            <li key={idx}>
+                                                <h5 className="text-xs font-bold text-white mb-1">{item.title}</h5>
+                                                <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="lg:col-span-5">
+                                    <div className="bg-background-dark/30 border border-panel-border rounded-lg p-6">
+                                        <h4 className="text-[10px] font-bold text-primary uppercase mb-4 flex items-center gap-2">
+                                            <span className="material-symbols-outlined text-sm">published_with_changes</span> Resulting Shift in Lead Quality
+                                        </h4>
+                                        <ul className="space-y-3">
+                                            {brand.sections.broadbrand_intervention.lead_quality_shift.map((outcome, idx) => (
+                                                <li key={idx} className="flex items-start gap-3 text-sm text-gray-300">
+                                                    <span className="material-symbols-outlined text-primary text-base leading-none translate-y-0.5">arrow_forward</span>
+                                                    <span>{outcome}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                     <div className="mt-12 pt-8 border-t border-panel-border/30 flex justify-between items-center text-[9px] font-mono text-gray-600">
                         <div className="flex items-center gap-3">
                             <span>© 2026 Gearhouse Audit by Broadbrand</span>

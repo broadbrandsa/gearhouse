@@ -45,6 +45,21 @@ export interface BrandSections {
     };
     decision_context?: string; // New section 1
     brand_limitations?: string; // New section 2
+    lead_growth_recommendations?: {
+        overview: string;
+        focus_areas: string[];
+        channel_copy: string;
+        expected_outcomes: string[];
+    };
+    broadbrand_intervention?: {
+        constraint: string;
+        intervention: string;
+        practical_support: {
+            title: string;
+            description: string;
+        }[];
+        lead_quality_shift: string[];
+    };
 }
 
 

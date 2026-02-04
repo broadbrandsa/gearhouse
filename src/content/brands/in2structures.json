@@ -74,6 +74,51 @@
     "additional_channels": [
       "Audit Rec: No broader channel expansion required."
     ],
-    "land_expand": "Structural challenges often trigger additional needs across staging, AV, lighting, and technical production."
+    "land_expand": "Structural challenges often trigger additional needs across staging, AV, lighting, and technical production.",
+    "lead_growth_recommendations": {
+      "overview": "In2Structures grows when its expertise is understood as a safeguard against structural, compliance, and liability risk. Lead quality improves when the brand is positioned as an authority that enables confident decision-making, not as a reactive technical fix.",
+      "focus_areas": [
+        "Frame structural involvement as a leadership-level risk decision",
+        "Reinforce accountability for safety and compliance",
+        "Strengthen inclusion within Gearhouse-led, high-complexity solutions"
+      ],
+      "channel_copy": "Messaging should be concentrated in credibility-driven environments such as the website, integrated proposals, and direct engagement with technical stakeholders. It should appear when decisions are being validated, not broadly promoted. Copy should remove uncertainty by emphasising responsibility, compliance, and proven expertise, avoiding creative or promotional language.",
+      "expected_outcomes": [
+        "Fewer speculative enquiries, more risk-aware discussions",
+        "Stronger trust with senior technical decision-makers",
+        "Increased inclusion in complex, multi-discipline projects"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "In2Structures is often engaged only after structural risk has already materialised.\n\nThis positions the brand as corrective rather than preventative.",
+      "intervention": "BroadBrand would reframe In2Structures as a design-stage safeguard and leadership-level decision.\n\nMessaging would emphasise accountability, compliance, and foresight.",
+      "practical_support": [
+        {
+          "title": "Positioning & Message Architecture",
+          "description": "Preventative risk framing."
+        },
+        {
+          "title": "Audience Intelligence",
+          "description": "Understanding engineering, compliance, and leadership motivators."
+        },
+        {
+          "title": "Journey Design",
+          "description": "Earlier inclusion in planning phases."
+        },
+        {
+          "title": "Creative Optimisation (CreativePlus)",
+          "description": "Authority-driven, trust-led content."
+        },
+        {
+          "title": "Outcome Measurement",
+          "description": "Optimising for early-stage inclusion."
+        }
+      ],
+      "lead_quality_shift": [
+        "More proactive engagements.",
+        "Higher project quality.",
+        "Stronger authority positioning."
+      ]
+    }
   }
 }

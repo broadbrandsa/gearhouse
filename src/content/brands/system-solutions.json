@@ -74,6 +74,51 @@
     "additional_channels": [
       "Audit Rec: No broader channel expansion required."
     ],
-    "land_expand": "Permanent installations often trigger additional requirements across staging, lighting, content, and event production."
+    "land_expand": "Permanent installations often trigger additional requirements across staging, lighting, content, and event production.",
+    "lead_growth_recommendations": {
+      "overview": "System Solutions grows when buyers clearly understand the long-term consequences of permanent AV and LED decisions. Demand strengthens when the brand helps organisations justify durable, future-proof infrastructure investments.",
+      "focus_areas": [
+        "Clarify the difference between installations and long-term systems",
+        "Support lifecycle thinking and internal approval processes",
+        "Emphasise after-sales support and maintenance certainty"
+      ],
+      "channel_copy": "This messaging should live within the website, specification documentation, and sales enablement materials used during evaluation and procurement. It should support internal decision justification rather than generate awareness. Copy should be technical, measured, and confidence-building, helping buyers defend long-term value over short-term savings.",
+      "expected_outcomes": [
+        "Higher-quality, specification-driven opportunities",
+        "Reduced price sensitivity during evaluation",
+        "Longer-term client relationships"
+      ]
+    },
+    "broadbrand_intervention": {
+      "constraint": "System Solutions is often evaluated late in procurement cycles, once specifications and budgets are already constrained.\n\nThis limits its ability to influence system design, lifecycle value, and long-term support decisions.",
+      "intervention": "BroadBrand would reposition System Solutions earlier in the journey by aligning messaging to permanence, future-proofing, and total cost of ownership.\n\nNarratives would support internal justification, not just vendor comparison.",
+      "practical_support": [
+        {
+          "title": "Positioning & Message Architecture",
+          "description": "Shifting focus from components to long-term systems."
+        },
+        {
+          "title": "Audience Intelligence",
+          "description": "Understanding procurement and technical approval dynamics."
+        },
+        {
+          "title": "Journey Design",
+          "description": "Engaging buyers before specs are locked."
+        },
+        {
+          "title": "Creative Optimisation (CreativePlus)",
+          "description": "Technical, confidence-building content."
+        },
+        {
+          "title": "Outcome Measurement",
+          "description": "Optimising for early-stage, high-intent engagements."
+        }
+      ],
+      "lead_quality_shift": [
+        "Earlier engagement.",
+        "Less price-led evaluation.",
+        "More strategic system discussions."
+      ]
+    }
   }
 }
