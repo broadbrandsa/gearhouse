@@ -1,0 +1,38 @@
+{
+  "slug": "sds",
+  "name": "SDS",
+  "metrics": {
+    "lcp": "11.2s",
+    "fcp": "3.8s",
+    "ttfb": "N/A",
+    "cls": "0.001",
+    "score": 58,
+    "tbt": "50ms"
+  },
+  "sections": {
+    "overview": "SDS is a leading provider in the technical event industry.",
+    "how_buyers_find": "Mostly through direct search and industry referrals.",
+    "priority_channels": [
+      "Organic Search",
+      "Direct",
+      "LinkedIn"
+    ],
+    "current_presence": "Established website with portfolio showcases.",
+    "gaps_improvements": [
+      {
+        "gap": "Slow mobile load times",
+        "impact": "High bounce rate on mobile devices"
+      },
+      {
+        "gap": "Lack of clear CTA",
+        "impact": "Lower conversion on landing pages"
+      }
+    ],
+    "performance_leakage": "Site performance is hindering user retention.",
+    "additional_channels": [
+      "Instagram for visual portfolio",
+      "Email newsletters"
+    ],
+    "land_expand": "Cross-sell opportunities with sister companies."
+  }
+}
