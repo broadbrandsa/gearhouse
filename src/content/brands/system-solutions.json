@@ -33,8 +33,14 @@
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
-      "Website",
-      "Direct technical relationships"
+      {
+        "channel": "Website",
+        "action": "Action: Add clear lifecycle value and technical specification downloads."
+      },
+      {
+        "channel": "Direct technical relationships",
+        "action": "Action: Create a long-term value justification pack for procurement teams."
+      }
     ],
     "target_audience": {
       "primary": "Facilities managers, engineers, technical consultants, and procurement teams responsible for permanent LED and AV installations.",

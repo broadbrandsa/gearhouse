@@ -10,13 +10,41 @@
     "seo": 92
   },
   "sections": {
-    "overview": "Splitbeam is a leading provider in the technical event industry.",
+    "overview": "Splitbeam is a specialist theatre and long-run rental partner, providing equipment rental, long-term leasing, and technical production support for theatres, schools, touring shows, and performance venues. It operates as part of the Gearhouse Group.",
+    "what_delivers": "Splitbeam delivers theatre-focused equipment rental, long-term leasing, and technical production services designed for environments where consistency, uptime, and specialist knowledge of performance spaces matter. It supports lighting, audio, rigging, and audiovisual requirements without the financial and operational burden of ownership. Its value is predictable delivery over time, with equipment that is maintained, available, and fit for theatre realities.",
+    "how_it_fits": "Splitbeam is the theatre and long-run rental specialist within the Gearhouse Group. Clients often engage Splitbeam for a specific theatre requirement, but the wider group enables a production to scale into larger venues, touring formats, broadcast environments, or multi-discipline delivery without adding new suppliers.",
     "decision_context": "The decision is whether to own and maintain equipment internally or partner with a specialist who provides consistency, predictability, and technical continuity over time.",
+    "discovery_patterns": [
+      {
+        "icon": "diversity_3",
+        "title": "Industry familiarity and referrals",
+        "description": "Splitbeam is most often discovered through theatre networks, schools, designers, and production professionals who trust specialist long-term rental support."
+      },
+      {
+        "icon": "manage_search",
+        "title": "Problem-led search",
+        "description": "Buyers arrive when short-term rentals become inefficient, availability is inconsistent, or lifecycle costs rise across a long-running production."
+      },
+      {
+        "icon": "verified",
+        "title": "Peer validation",
+        "description": "Reputation and prior delivery carry more weight than broad marketing. Buyers validate capability through trusted networks and proof of consistent delivery."
+      }
+    ],
     "how_buyers_find": "Mostly through direct search and industry referrals.",
     "priority_channels": [
-      "Organic Search",
-      "Direct",
-      "LinkedIn"
+      {
+        "channel": "Website",
+        "action": "Action: Add audience-specific entry points (theatres, schools, touring productions) and a clear consult CTA for long-term rental and technical support."
+      },
+      {
+        "channel": "Direct relationships and referrals",
+        "action": "Action: Provide a simple ‘school and theatre rental pack’ that makes budgeting, uptime, and support terms easy to understand and share."
+      },
+      {
+        "channel": "LinkedIn",
+        "action": "Action: Use it for credibility signals and proof, not volume lead generation."
+      }
     ],
     "target_audience": {
       "primary": "Theatre professionals, venue managers, and schools responsible for long-run productions and consistent technical delivery.",
@@ -31,12 +59,24 @@
     "current_presence": "Established website with portfolio showcases.",
     "gaps_improvements": [
       {
-        "gap": "Slow mobile load times",
-        "impact": "High bounce rate on mobile devices"
+        "gap": "Service-led copy without clear problem framing",
+        "impact": "Visitors see 'equipment rental' but don't immediately grasp the strategic value of long-term partnership versus ad-hoc hire.",
+        "improvement_opportunity": "Lead with the financial and operational benefits of long-term rental (predictability, maintenance, support)."
       },
       {
-        "gap": "Lack of clear CTA",
-        "impact": "Lower conversion on landing pages"
+        "gap": "Limited early audience qualification",
+        "impact": "Schools, theatres, and touring productions have distinct needs. A generic homepage slows down their journey to relevance.",
+        "improvement_opportunity": "Create distinct pathways for 'Schools', 'Theatres', and 'Touring Productions' to fast-track relevance."
+      },
+      {
+        "gap": "Gearhouse group strength is not explained",
+        "impact": "Buyers might see Splitbeam as a standalone niche player, missing the scale and backup assurance provided by the wider group.",
+        "improvement_opportunity": "Explicitly mention the Gearhouse Group backing to reassure buyers about scale, insurance, and backup capability."
+      },
+      {
+        "gap": "Long-term value not contrasted with short-term hire",
+        "impact": "Price comparison against short-term rental rates can look unfavourable if the long-term value props (maintenance, swaps, support) aren't clear.",
+        "improvement_opportunity": "Clearly articulate the 'Total Cost of Ownership' benefits of long-term rental vs buying or ad-hoc hiring."
       }
     ],
     "brand_limitations": "Splitbeam should not chase high-volume, short-term rental demand outside its specialist focus. Its strength is long-run reliability, not transactional hire.",

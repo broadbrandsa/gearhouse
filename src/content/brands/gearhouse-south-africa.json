@@ -10,29 +10,85 @@
     "seo": 92
   },
   "sections": {
-    "overview": "Gearhouse South Africa is a leading provider in the technical event industry.",
+    "overview": "Gearhouse South Africa is the group’s South African delivery engine for technical production, supplying crew, equipment, and operational delivery across live events, venues, and broadcasts. It is often the execution layer behind complex briefs, with the group’s specialist brands extending capability where deeper solutions are required.",
+    "what_delivers": "Gearhouse South Africa delivers large-scale technical event production across South Africa, combining equipment, crew, planning, and on-site execution. Its value is delivery certainty under pressure. When timelines are tight, audiences are large, and reputational risk is high, Gearhouse South Africa reduces the chance of failure by running production with experienced teams, proven processes, and the backing of the wider group.",
+    "how_it_fits": "Gearhouse South Africa is the primary South African delivery arm of the Gearhouse Group. It handles broad technical production delivery and acts as the most common entry point for local briefs. When a brief requires specialist depth (structures, LED manufacturing, seating, scenic build, venue technical management, communications), the wider group brands plug in as internal extensions of the same delivery model.",
+    "decision_context": "The buyer is choosing between coordinating multiple suppliers or appointing one team to run delivery end-to-end. This is a risk, accountability, and reputation decision.",
+    "brand_limitations": "Gearhouse South Africa should not position itself as a commodity supplier or compete on line-item pricing. Its strength is delivery certainty, scale, and accountability.",
+    "discovery_patterns": [
+      {
+        "icon": "manage_search",
+        "title": "Problem-led search",
+        "description": "Buyers arrive when a production becomes too complex to manage with multiple suppliers, or when delivery risk increases due to scale, deadlines, or stakeholder pressure."
+      },
+      {
+        "icon": "diversity_3",
+        "title": "Referrals and repeat work",
+        "description": "Most strong leads come from prior delivery success, agencies and producers who trust the team, and repeat engagements where reliability matters more than price."
+      },
+      {
+        "icon": "verified",
+        "title": "Website validation",
+        "description": "Buyers use the website to confirm capability, scale, and credibility before contacting the team, especially for high-visibility briefs."
+      }
+    ],
     "how_buyers_find": "Mostly through direct search and industry referrals.",
     "priority_channels": [
-      "Organic Search",
-      "Direct",
-      "LinkedIn"
+      {
+        "channel": "Organic Search",
+        "action": "Action: Create service-specific entry pages for high-intent searches (e.g. technical production, staging, rigging, lighting, AV), each with proof, scope clarity, and a direct enquiry path."
+      },
+      {
+        "channel": "Direct",
+        "action": "Action: Standardise proposal language and a simple capability pack that frames Gearhouse as the accountable delivery partner with specialist support available when needed."
+      },
+      {
+        "channel": "LinkedIn",
+        "action": "Action: Post delivery proof and credibility signals (projects, behind-the-scenes, safety and scale), aimed at decision-makers, not broad awareness."
+      }
     ],
     "current_presence": "Established website with portfolio showcases.",
     "gaps_improvements": [
       {
-        "gap": "Slow mobile load times",
-        "impact": "High bounce rate on mobile devices"
+        "gap": "Delivery value is not framed as risk reduction",
+        "impact": "Buyers choose Gearhouse South Africa when failure is expensive. If the copy sounds generic, the brand becomes price-compared.",
+        "improvement_opportunity": "Reframe messaging around delivery certainty, accountability, and reduced coordination risk."
       },
       {
-        "gap": "Lack of clear CTA",
-        "impact": "Lower conversion on landing pages"
+        "gap": "Buyers are not guided into the right entry point",
+        "impact": "Agencies, corporates, venues, and broadcasters arrive with different needs. Without guidance, relevance is slower to see.",
+        "improvement_opportunity": "Add simple audience-led entry points and ‘how we help’ routes (agency, corporate, venue, broadcast)."
+      },
+      {
+        "gap": "Group strength is implied, not explained",
+        "impact": "Buyers may not realise specialist capability is internal, which weakens confidence in scale and backup.",
+        "improvement_opportunity": "Explain how specialist brands plug into delivery as one operating system."
+      },
+      {
+        "gap": "Calls to action don’t match buyer intent",
+        "impact": "High-value buyers want a scoped conversation, not a generic contact step.",
+        "improvement_opportunity": "Shift CTA language to ‘Discuss your brief’ / ‘Request a production consult’ and reinforce response speed and accountability."
       }
     ],
-    "performance_leakage": "Site performance is hindering user retention.",
+    "performance_leakage": "Performance may increase drop-off on mobile during early validation. Fixing speed helps, but lead quality will still depend on clearer positioning and stronger buyer guidance.",
     "additional_channels": [
       "Instagram for visual portfolio",
       "Email newsletters"
     ],
-    "land_expand": "Cross-sell opportunities with sister companies."
+    "land_expand": "Cross-sell opportunities with sister companies.",
+    "lead_growth_recommendations": {
+      "overview": "Gearhouse South Africa’s growth lies in capturing high-stakes briefs where failure is not an option. By positioning itself as the 'risk reducer' rather than just a supplier, it can justify premium value.",
+      "focus_areas": [
+        "Position delivery certainty as the primary product",
+        "Use specialist group brands to win complex tenders",
+        "Streamline entry points for different buyer types"
+      ],
+      "channel_copy": "Messaging should focus on 'delivery certainty', 'accountability', and 'scale'. Avoid technical jargon where possible, focusing instead on the outcome: a flawless event delivered on time and within budget.",
+      "expected_outcomes": [
+        "Increased win rate on complex tenders",
+        "Higher average order value via cross-selling",
+        "stronger brand differentiation vs commodity suppliers"
+      ]
+    }
   }
 }

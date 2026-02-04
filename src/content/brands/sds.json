@@ -10,8 +10,8 @@
     "seo": 100
   },
   "sections": {
-    "overview": "Sets Drapes Screens delivers custom set manufacturing, draping, scenic elements, and visual environments for live events, exhibitions, broadcast productions, and brand activations, operating as a specialist capability within the Gearhouse Group.",
-    "what_delivers": "Sets Drapes Screens provides the physical and visual environments that shape how audiences experience events and productions. This includes custom-built sets, scenic elements, draping, screens, and fabricated environments tailored to the needs of corporate events, exhibitions, television, and brand-led experiences.\n\nThe brand’s value lies in translating creative intent into physical reality, balancing aesthetic impact with practicality, timelines, and budget constraints.",
+    "overview": "Sets Drapes Screens (SDS) delivers custom set manufacturing, draping, scenic elements, and visual environments for live events, exhibitions, broadcast productions, and brand activations, operating as a specialist capability within the Gearhouse Group.",
+    "what_delivers": "SDS provides the physical and visual environments that shape how audiences experience events and productions. This includes custom-built sets, scenic elements, draping, screens, and fabricated environments tailored to the needs of corporate events, exhibitions, television, and brand-led experiences.\n\nThe brand’s value lies in translating creative intent into physical reality, balancing aesthetic impact with practicality, timelines, and budget constraints.",
     "decision_context": "The decision is whether creative vision is executed through fragmented suppliers or entrusted to a partner who can translate concepts into feasible, deliverable physical environments.",
     "how_it_fits": "SDS is the group’s scenic and fabrication specialist. It enables Gearhouse to deliver fully realised environments without relying on external set builders, keeping creative execution, timelines, and quality control within the group.\n\nWithin the broader ecosystem, SDS often works alongside staging, lighting, LED, and structures to complete the audience-facing layer of delivery.",
     "discovery_patterns": [
@@ -33,8 +33,14 @@
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
-      "Website",
-      "Direct relationships and referrals"
+      {
+        "channel": "Website",
+        "action": "Action: Add 'Buildability' guides to help creatives understand feasibility."
+      },
+      {
+        "channel": "Direct relationships and referrals",
+        "action": "Action: Strengthen agency partnerships with process-led feasibility reviews."
+      }
     ],
     "target_audience": {
       "primary": "Agencies, creative directors, producers, and exhibition planners commissioning custom scenic environments.",

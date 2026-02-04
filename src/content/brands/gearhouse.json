@@ -10,9 +10,9 @@
     "seo": 92
   },
   "sections": {
-    "overview": "Gearhouse is the primary entry point into the group, positioned to take ownership of complex event, venue, and production challenges by orchestrating specialist solutions across its operating companies.",
-    "what_delivers": "Gearhouse delivers end-to-end technical production capability for live events, venues, broadcast environments, and large-scale activations. Its core value is not any single service, but the ability to assume accountability for delivery across multiple disciplines, suppliers, and operational risks.\n\nFor buyers, Gearhouse represents a reduction in coordination complexity, supplier risk, and delivery uncertainty, particularly in high-stakes or time-critical environments.",
-    "how_it_fits": "Gearhouse is the umbrella brand and should function as the group’s primary demand engine. While specialist brands provide depth and category expertise, Gearhouse is the brand that should attract problem-level demand and convert it into structured delivery using the group’s internal capabilities.\n\nIn practice, Gearhouse is the “front door” through which many clients should enter, even if the initial requirement ultimately maps to a specialist solution.",
+    "overview": "Gearhouse is the primary entry point into the group, positioned to take ownership of complex event, venue, and production challenges by bringing the right specialists together across its operating companies.",
+    "what_delivers": "Gearhouse delivers end-to-end technical production capability for live events, venues, broadcast environments, and large-scale activations. Its core value is not any single service, but the ability to take full responsibility for delivery across multiple disciplines, suppliers, and operational risks.\n\nFor buyers, Gearhouse represents a reduction in coordination complexity, supplier risk, and things going wrong, particularly in high-stakes or time-critical environments.",
+    "how_it_fits": "Gearhouse is the umbrella brand and should function as the group’s main lead driver. While specialist brands provide depth and category expertise, Gearhouse is the brand that should attract problem-level demand and turn it into a clear plan and deliver it using the group’s internal capabilities.\n\nIn practice, Gearhouse is the “front door” through which many clients should enter, even if the initial requirement ultimately maps to a specialist solution.",
     "discovery_patterns": [
       {
         "title": "Problem-led search",
@@ -32,8 +32,14 @@
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
-      "Website",
-      "LinkedIn"
+      {
+        "channel": "Website",
+        "action": "Action: Add simpler audience-led entry points and outcomes-based proof."
+      },
+      {
+        "channel": "LinkedIn",
+        "action": "Action: Share leadership perspectives on risk, scale, and accountability."
+      }
     ],
     "target_audience": {
       "primary": "Senior decision-makers responsible for high-risk, high-visibility delivery, including corporate event leads, agencies, broadcasters, venue operators, and public-sector stakeholders.",
@@ -50,10 +56,10 @@
       {
         "gap": "Umbrella value framed around services, not buyer outcomes",
         "impact": "Buyers selecting an umbrella partner are often motivated by fear of failure, reputational risk, or coordination breakdown, not by service availability alone.",
-        "improvement_opportunity": "Explicitly articulate Gearhouse as the “single throat to choke” and risk-absorbing partner, rather than a collection of services."
+        "improvement_opportunity": "Explicitly articulate Gearhouse as the “single accountable partner” and risk-absorbing partner, rather than a collection of services."
       },
       {
-        "gap": "No guided journeys for differnt buyer types",
+        "gap": "No guided journeys for different buyer types",
         "impact": "Different buyers have different decision criteria, approval processes, and risk sensitivities. Without guidance, some will struggle to quickly see relevance.",
         "improvement_opportunity": "Introduce clearer audience-led framing that helps buyers self-identify and understand how Gearhouse supports their specific context."
       },
@@ -98,7 +104,7 @@
         },
         {
           "title": "Audience & Decision-Maker Intelligence",
-          "description": "Mapping senior buyer motivations around risk, governance, and delivery certainty to guide group-level messaging."
+          "description": "Mapping senior buyer motivations around risk, oversight, and delivery certainty to guide group-level messaging."
         },
         {
           "title": "Journey & Demand Architecture",

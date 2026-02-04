@@ -33,8 +33,14 @@
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
-      "Website",
-      "Direct relationships and referrals"
+      {
+        "channel": "Website",
+        "action": "Action: Add specific technical case studies that prove compliance and engineering capability."
+      },
+      {
+        "channel": "Direct relationships and referrals",
+        "action": "Action: Equip engineers with a technical capability pack to support internal advocacy."
+      }
     ],
     "target_audience": {
       "primary": "Production managers, engineers, technical directors, and compliance-driven stakeholders responsible for structural feasibility and safety.",
@@ -66,7 +72,7 @@
       {
         "gap": "Buyer reassurance is implicit rather than explicit",
         "impact": "Structural buyers need explicit reassurance to justify decisions internally, particularly in regulated or high-visibility environments.",
-        "improvement_opportunity": "Surface compliance, standards, and engineering governance more prominently as decision-support tools."
+        "improvement_opportunity": "Surface compliance, standards, and engineering oversight more prominently as decision-support tools."
       }
     ],
     "brand_limitations": "In2Structures should not attempt broad creative or event marketing. Its authority comes from engineering credibility, compliance certainty, and specialist trust.",

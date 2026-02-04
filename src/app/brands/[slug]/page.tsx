@@ -153,15 +153,22 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-panel-border/50">
-                                {brand.sections.priority_channels.map((channel, idx) => (
+                                {brand.sections.priority_channels.map((item, idx) => (
                                     <tr key={idx} className="hover:bg-primary/5 transition-colors">
                                         <td className="px-6 py-5">
-                                            <div className="flex items-center gap-3">
-                                                <span className="size-6 bg-primary text-background-dark rounded flex items-center justify-center font-black">{idx + 1}</span>
-                                                <span className="font-bold text-gray-200 uppercase tracking-widest">{channel}</span>
+                                            <div className="flex flex-col gap-2">
+                                                <div className="flex items-center gap-3">
+                                                    <span className="size-6 bg-primary text-background-dark rounded flex items-center justify-center font-black">{idx + 1}</span>
+                                                    <span className="font-bold text-gray-200 uppercase tracking-widest">{item.channel}</span>
+                                                </div>
+                                                {item.action && (
+                                                    <p className="pl-9 text-[10px] text-gray-400 font-mono">
+                                                        <span className="text-primary/70 font-bold">Action:</span> {item.action.replace(/^Action:\s*/i, '')}
+                                                    </p>
+                                                )}
                                             </div>
                                         </td>
-                                        <td className="px-6 py-5 text-gray-400">Primary Channel</td>
+                                        <td className="px-6 py-5 text-gray-400 align-top pt-6">Primary Channel</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -321,7 +328,7 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2 space-y-6">
                             <p className="text-sm text-slate-gray leading-loose">
-                                Understanding {brand.name}s placement within the Gearhouse Group is essential for high-level tenders. The brand serves as a specialized gateway, offering clients a high-touch, boutique service model while simultaneously providing the massive logistical security of the continent's largest technical supplier.
+                                Understanding {brand.name}{brand.name.endsWith('s') ? "'" : "'s"} placement within the Gearhouse Group is essential for high-level tenders. The brand serves as a specialized gateway, offering clients a high-touch, boutique service model while simultaneously providing the massive logistical security of the continent's largest technical supplier.
                             </p>
                             <div className="bg-primary/5 border border-primary/20 p-6 rounded-xl">
                                 <span className="text-[10px] font-black uppercase text-primary block mb-2 tracking-widest">Growth Loop: Land, Expand, Retain</span>
@@ -360,24 +367,7 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                                 The primary growth opportunity lies in <span className="text-white font-semibold">problem framing</span>. By better leveraging the Gearhouse Group identity as a security layer, {brand.name} can move from being a 'vendor' to a 'strategic production partner.'
                             </p>
                         </div>
-                        <div className="flex gap-8">
-                            {prevBrand && (
-                                <Link className="flex flex-col group" href={`/brands/${prevBrand.slug}`}>
-                                    <span className="text-[10px] text-gray-500 font-black uppercase mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
-                                        <span className="material-symbols-outlined text-xs">arrow_back</span> Previous Brand
-                                    </span>
-                                    <span className="text-sm font-bold text-gray-200">{prevBrand.name}</span>
-                                </Link>
-                            )}
-                            {nextBrand && (
-                                <Link className="flex flex-col items-end group text-right" href={`/brands/${nextBrand.slug}`}>
-                                    <span className="text-[10px] text-gray-500 font-black uppercase mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
-                                        Next Brand <span className="material-symbols-outlined text-xs">arrow_forward</span>
-                                    </span>
-                                    <span className="text-sm font-bold text-gray-200">{nextBrand.name}</span>
-                                </Link>
-                            )}
-                        </div>
+
                     </div>
 
                     {brand.sections.lead_growth_recommendations && (
@@ -483,6 +473,28 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                             </div>
                         </div>
                     )}
+                    <div className="mt-12 pt-12 border-t border-panel-border/30 flex justify-between gap-8">
+                        <div>
+                            {prevBrand && (
+                                <Link className="flex flex-col group" href={`/brands/${prevBrand.slug}`}>
+                                    <span className="text-[10px] text-gray-500 font-black uppercase mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
+                                        <span className="material-symbols-outlined text-xs">arrow_back</span> Previous Brand
+                                    </span>
+                                    <span className="text-sm font-bold text-gray-200">{prevBrand.name}</span>
+                                </Link>
+                            )}
+                        </div>
+                        <div>
+                            {nextBrand && (
+                                <Link className="flex flex-col items-end group text-right" href={`/brands/${nextBrand.slug}`}>
+                                    <span className="text-[10px] text-gray-500 font-black uppercase mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
+                                        Next Brand <span className="material-symbols-outlined text-xs">arrow_forward</span>
+                                    </span>
+                                    <span className="text-sm font-bold text-gray-200">{nextBrand.name}</span>
+                                </Link>
+                            )}
+                        </div>
+                    </div>
                     <div className="mt-12 pt-8 border-t border-panel-border/30 flex justify-between items-center text-[9px] font-mono text-gray-600">
                         <div className="flex items-center gap-3">
                             <span>© 2026 Gearhouse Audit by Broadbrand</span>

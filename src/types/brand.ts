@@ -25,7 +25,10 @@ export interface BrandSections {
     how_buyers_find: string; // Keep for backward compatibility or generic usage
     discovery_patterns?: BrandDiscoveryPattern[];
     discovery_insight?: string; // Audit insight for discovery
-    priority_channels: string[];
+    priority_channels: {
+        channel: string;
+        action: string;
+    }[];
     priority_channels_analysis?: {
         channel: string;
         why_matters: string;

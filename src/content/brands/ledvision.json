@@ -32,8 +32,14 @@
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
-      "Website",
-      "Direct relationships and referrals"
+      {
+        "channel": "Website",
+        "action": "Action: Showcase reliability and redundancy for high-risk environments."
+      },
+      {
+        "channel": "Direct relationships and referrals",
+        "action": "Action: Provide producers with risk-mitigation specs and backup protocol details."
+      }
     ],
     "target_audience": {
       "primary": "Event producers, agencies, broadcasters, and brand managers responsible for visually critical moments.",

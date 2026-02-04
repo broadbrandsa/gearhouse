@@ -33,8 +33,14 @@
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
-      "Website",
-      "Direct relationships and referrals"
+      {
+        "channel": "Website",
+        "action": "Action: Emphasise operational continuity and risk transfer."
+      },
+      {
+        "channel": "Direct relationships and referrals",
+        "action": "Action: Create a 'Venue Risk Assessment' tool for operations managers."
+      }
     ],
     "target_audience": {
       "primary": "Venue owners, venue managers, and operations leaders responsible for daily technical performance, uptime, and safety.",

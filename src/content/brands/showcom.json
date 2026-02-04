@@ -11,7 +11,7 @@
   },
   "sections": {
     "overview": "ShowCom provides specialist communications and connectivity solutions for live events and productions, operating as a capability within the Gearhouse Group.",
-    "what_delivers": "ShowCom delivers mission-critical communications infrastructure for live events, productions, and complex operational environments. This includes event communications systems where coordination, safety, and real-time responsiveness are essential.\n\nThe value of ShowCom is not visibility or scale, but operational certainty. When communications fail, events stall, safety risks increase, and delivery breaks down. ShowCom exists to remove this category of risk.",
+    "what_delivers": "ShowCom delivers mission-critical communications infrastructure for live events, productions, and complex operational environments. This includes event communications systems where coordination, safety, and real-time responsiveness are essential.\n\nThe value of ShowCom is not visibility or scale, but operational certainty. When communications fail, events stall, safety risks increase, and delivery breaks down. ShowCom exists to remove this risk area.",
     "decision_context": "The decision is whether live communications and coordination are treated as an afterthought or embedded as a critical safety and operational layer.",
     "how_it_fits": "ShowCom is the group’s communications and coordination specialist. It underpins delivery across all other Gearhouse capabilities by ensuring crews, production teams, and stakeholders remain connected during live operations.\n\nWithin the group ecosystem, ShowCom functions as an enabling layer rather than a headline service, but its absence would significantly increase operational risk across productions.",
     "discovery_patterns": [
@@ -33,8 +33,14 @@
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
-      "Direct group routing",
-      "Direct relationships and referrals"
+      {
+        "channel": "Direct group routing",
+        "action": "Action: Integrate ShowCom availability checks into all group-level scoping."
+      },
+      {
+        "channel": "Direct relationships and referrals",
+        "action": "Action: Build trust with safety officers through operational reliability."
+      }
     ],
     "target_audience": {
       "primary": "Production managers, safety officers, and technical directors responsible for live communication and coordination.",
@@ -51,7 +57,7 @@
       {
         "gap": "No standalone validation surface",
         "impact": "When ShowCom is introduced externally, buyers have no clear reference point to validate capability or understand relevance.",
-        "improvement_opportunity": "Introduce a minimal validation surface that clearly explains ShowCom’s role within live production and the Gearhouse Group."
+        "improvement_opportunity": "Introduce a simple page people can check that clearly explains ShowCom’s role within live production and the Gearhouse Group."
       },
       {
         "gap": "Communications framed as an add-on rather than a risk category",

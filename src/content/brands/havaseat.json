@@ -33,8 +33,14 @@
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
-      "Website",
-      "Direct relationships and referrals"
+      {
+        "channel": "Website",
+        "action": "Action: Focus on safety certification and capacity planning tools."
+      },
+      {
+        "channel": "Direct relationships and referrals",
+        "action": "Action: Provide compliance checklists for safety officers."
+      }
     ],
     "target_audience": {
       "primary": "Event organisers, production managers, and compliance officers responsible for temporary audience infrastructure.",
