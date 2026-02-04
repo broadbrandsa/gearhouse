@@ -1,37 +1,79 @@
 {
   "slug": "showcom",
-  "name": "Showcom",
+  "name": "ShowCom",
+  "role_tag": "Event Communications & Connectivity Specialist",
+  "logo": "/logos/showcom.png",
   "metrics": {
-    "lcp": "4.5s",
-    "fcp": "1.2s",
-    "ttfb": "0.8s",
-    "cls": "0.05",
-    "score": 60
+    "performance": 54,
+    "accessibility": 95,
+    "bestPractices": 100,
+    "seo": 92
   },
   "sections": {
-    "overview": "Showcom is a leading provider in the technical event industry.",
-    "how_buyers_find": "Mostly through direct search and industry referrals.",
-    "priority_channels": [
-      "Organic Search",
-      "Direct",
-      "LinkedIn"
-    ],
-    "current_presence": "Established website with portfolio showcases.",
-    "gaps_improvements": [
+    "overview": "ShowCom provides specialist communications and connectivity solutions for live events and productions, operating as a capability within the Gearhouse Group.",
+    "what_delivers": "ShowCom delivers mission-critical communications infrastructure for live events, productions, and complex operational environments. This includes event communications systems where coordination, safety, and real-time responsiveness are essential.\n\nThe value of ShowCom is not visibility or scale, but operational certainty. When communications fail, events stall, safety risks increase, and delivery breaks down. ShowCom exists to remove this category of risk.",
+    "decision_context": "The decision is whether live communications and coordination are treated as an afterthought or embedded as a critical safety and operational layer.",
+    "how_it_fits": "ShowCom is the group’s communications and coordination specialist. It underpins delivery across all other Gearhouse capabilities by ensuring crews, production teams, and stakeholders remain connected during live operations.\n\nWithin the group ecosystem, ShowCom functions as an enabling layer rather than a headline service, but its absence would significantly increase operational risk across productions.",
+    "discovery_patterns": [
       {
-        "gap": "Slow mobile load times",
-        "impact": "High bounce rate on mobile devices"
+        "title": "Operational failure or risk exposure",
+        "description": "Buyers often seek ShowCom after experiencing communication breakdowns during live events or rehearsals.",
+        "icon": "phonelink_erase"
       },
       {
-        "gap": "Lack of clear CTA",
-        "impact": "Lower conversion on landing pages"
+        "title": "Internal group routing",
+        "description": "ShowCom is frequently introduced via Gearhouse or other specialist brands once communications complexity becomes apparent.",
+        "icon": "Alt_Route"
+      },
+      {
+        "title": "Production-led referrals",
+        "description": "Production managers and technical directors who understand the importance of reliable comms often recommend ShowCom directly.",
+        "icon": "record_voice_over"
       }
     ],
-    "performance_leakage": "Site performance is hindering user retention.",
-    "additional_channels": [
-      "Instagram for visual portfolio",
-      "Email newsletters"
+    "how_buyers_find": "See discovery patterns",
+    "priority_channels": [
+      "Direct group routing",
+      "Direct relationships and referrals"
     ],
-    "land_expand": "Cross-sell opportunities with sister companies."
+    "target_audience": {
+      "primary": "Production managers, safety officers, and technical directors responsible for live communication and coordination.",
+      "motivators": "Buyers prioritise clarity, reliability, and failure prevention in high-pressure live environments.",
+      "validation_channels": [
+        "Internal Gearhouse routing",
+        "Production referrals",
+        "On-site operational trust"
+      ],
+      "lead_quality": "Lead value is driven by integration into existing production workflows rather than independent demand."
+    },
+    "current_presence": "See How it fits",
+    "gaps_improvements": [
+      {
+        "gap": "No standalone validation surface",
+        "impact": "When ShowCom is introduced externally, buyers have no clear reference point to validate capability or understand relevance.",
+        "improvement_opportunity": "Introduce a minimal validation surface that clearly explains ShowCom’s role within live production and the Gearhouse Group."
+      },
+      {
+        "gap": "Communications framed as an add-on rather than a risk category",
+        "impact": "Failures in communications can halt delivery, compromise safety, and damage reputations.",
+        "improvement_opportunity": "Explicitly position ShowCom as a risk-mitigation and operational assurance capability."
+      },
+      {
+        "gap": "Value only visible once something goes wrong",
+        "impact": "Reactive engagement limits planning, integration, and optimisation.",
+        "improvement_opportunity": "Encourage earlier inclusion by framing communications as foundational infrastructure, not a contingency."
+      },
+      {
+        "gap": "Group dependency not clearly articulated",
+        "impact": "Clients may not realise communications are an integrated internal capability rather than an external bolt-on.",
+        "improvement_opportunity": "Clearly position ShowCom as a core enabling layer within the Gearhouse delivery system."
+      }
+    ],
+    "brand_limitations": "ShowCom should not operate as a standalone, discovery-led brand. Its effectiveness is maximised when integrated through Gearhouse and production partners.",
+    "performance_leakage": "The absence of a digital validation surface is the primary constraint on external lead confidence. ShowCom is unlikely to generate direct leads independently. Its value is maximised when routed through Gearhouse and other specialist brands.",
+    "additional_channels": [
+      "Audit Rec: No broader channel expansion required. Priority on minimal validation surface."
+    ],
+    "land_expand": "Communications infrastructure underpins every other delivery discipline, particularly in high-risk, live environments."
   }
 }

@@ -1,37 +1,78 @@
 {
   "slug": "gearhouse",
   "name": "Gearhouse",
+  "logo": "/logos/gearhouse.png",
+  "role_tag": "Umbrella Production Partner & Group Entry Point",
   "metrics": {
-    "lcp": "6.2s",
-    "fcp": "5.8s",
-    "ttfb": "4.4s",
-    "cls": "0.01",
-    "score": 63
+    "performance": 63,
+    "accessibility": 92,
+    "bestPractices": 100,
+    "seo": 92
   },
   "sections": {
-    "overview": "Gearhouse is a leading provider in the technical event industry.",
-    "how_buyers_find": "Mostly through direct search and industry referrals.",
-    "priority_channels": [
-      "Organic Search",
-      "Direct",
-      "LinkedIn"
-    ],
-    "current_presence": "Established website with portfolio showcases.",
-    "gaps_improvements": [
+    "overview": "Gearhouse is the primary entry point into the group, positioned to take ownership of complex event, venue, and production challenges by orchestrating specialist solutions across its operating companies.",
+    "what_delivers": "Gearhouse delivers end-to-end technical production capability for live events, venues, broadcast environments, and large-scale activations. Its core value is not any single service, but the ability to assume accountability for delivery across multiple disciplines, suppliers, and operational risks.\n\nFor buyers, Gearhouse represents a reduction in coordination complexity, supplier risk, and delivery uncertainty, particularly in high-stakes or time-critical environments.",
+    "how_it_fits": "Gearhouse is the umbrella brand and should function as the group’s primary demand engine. While specialist brands provide depth and category expertise, Gearhouse is the brand that should attract problem-level demand and convert it into structured delivery using the group’s internal capabilities.\n\nIn practice, Gearhouse is the “front door” through which many clients should enter, even if the initial requirement ultimately maps to a specialist solution.",
+    "discovery_patterns": [
       {
-        "gap": "Slow mobile load times",
-        "impact": "High bounce rate on mobile devices"
+        "title": "Problem-led search",
+        "description": "Buyers typically arrive when a brief becomes too complex, risky, or fragmented to manage through multiple standalone suppliers. This often coincides with increased scale, visibility, or consequence of failure.",
+        "icon": "manage_search"
       },
       {
-        "gap": "Lack of clear CTA",
-        "impact": "Lower conversion on landing pages"
+        "title": "Referrals and repeat engagements",
+        "description": "A significant portion of demand is driven by prior delivery success, internal referrals, and industry word-of-mouth, especially in environments where reliability outweighs price sensitivity.",
+        "icon": "diversity_3"
+      },
+      {
+        "title": "Credibility validation",
+        "description": "Buyers often arrive with awareness already established and use the website to validate scale, experience, and capability before initiating direct contact.",
+        "icon": "verified"
       }
     ],
-    "performance_leakage": "Site performance is hindering user retention.",
-    "additional_channels": [
-      "Instagram for visual portfolio",
-      "Email newsletters"
+    "how_buyers_find": "See discovery patterns",
+    "priority_channels": [
+      "Website",
+      "LinkedIn"
     ],
-    "land_expand": "Cross-sell opportunities with sister companies."
+    "target_audience": {
+      "primary": "Senior decision-makers responsible for high-risk, high-visibility delivery, including corporate event leads, agencies, broadcasters, venue operators, and public-sector stakeholders.",
+      "motivators": "These buyers are motivated by risk reduction, accountability, and outcome certainty. They choose Gearhouse when the cost of failure outweighs the cost of consolidation. A single accountable partner reduces internal friction and reputational exposure.",
+      "validation_channels": [
+        "Peer reputation and referrals",
+        "Website credibility and scale signals",
+        "Leadership reassurance and group track record"
+      ],
+      "lead_quality": "High-quality leads are complex, solution-led, and rarely price-driven. Conversion depends on confidence, not persuasion."
+    },
+    "current_presence": "See How it fits",
+    "gaps_improvements": [
+      {
+        "gap": "Umbrella value framed around services, not buyer outcomes",
+        "impact": "Buyers selecting an umbrella partner are often motivated by fear of failure, reputational risk, or coordination breakdown, not by service availability alone.",
+        "improvement_opportunity": "Explicitly articulate Gearhouse as the “single throat to choke” and risk-absorbing partner, rather than a collection of services."
+      },
+      {
+        "gap": "No guided journeys for differnt buyer types",
+        "impact": "Different buyers have different decision criteria, approval processes, and risk sensitivities. Without guidance, some will struggle to quickly see relevance.",
+        "improvement_opportunity": "Introduce clearer audience-led framing that helps buyers self-identify and understand how Gearhouse supports their specific context."
+      },
+      {
+        "gap": "Specialist brands not clearly positioned as an internal system",
+        "impact": "Buyers may still perceive risk associated with multi-supplier coordination, even when those suppliers sit within the same group.",
+        "improvement_opportunity": "Reinforce the idea that specialist brands are internal extensions of one delivery model, not separate vendors."
+      },
+      {
+        "gap": "Proof exists, but is not structured as decision support",
+        "impact": "Many Gearhouse engagements require internal buy-in from finance, procurement, or executive stakeholders.",
+        "improvement_opportunity": "Structure proof to support internal justification, not just external reassurance."
+      }
+    ],
+    "brand_limitations": "Gearhouse should not position itself as a commodity service provider or compete on isolated line-item pricing. Its strength lies in orchestration, accountability, and scale, not in tactical execution alone.",
+    "performance_leakage": "The site demonstrates strong technical credibility and accessibility, which supports enterprise trust. Performance is acceptable but not exemplary for a high-impact conversion surface. Lead quality and conversion are more affected by clarity of positioning and buyer guidance than by technical constraints.",
+    "additional_channels": [
+      "Audit Rec: No broader channel expansion required."
+    ],
+    "land_expand": "Many Gearhouse clients begin with a specific problem but later encounter additional needs across staging, structures, AV, communications, or long-term infrastructure."
   }
 }

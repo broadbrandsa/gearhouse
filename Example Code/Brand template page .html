@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Splitbeam Deep Audit Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981", // Emerald 500
+                        "primary-hover": "#059669",
+                        "background-dark": "#090c11",
+                        "panel-dark": "#111827",
+                        "panel-border": "#1f2937",
+                        "charcoal": "#0b0f14",
+                        "slate-gray": "#9ca3af"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-dark text-gray-100 selection:bg-primary/30;
+            }
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 4px;
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            @apply bg-panel-border rounded-full;
+        }
+        .glass-panel {
+            @apply bg-panel-dark/50 border border-panel-border backdrop-blur-sm;
+        }
+    </style>
+</head>
+<body class="font-display">
+<nav class="sticky top-0 z-50 w-full bg-background-dark/90 backdrop-blur-xl border-b border-panel-border">
+<div class="max-w-[1600px] mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl font-bold">query_stats</span>
+<div class="flex flex-col -space-y-1">
+<h2 class="text-xs font-black tracking-tight uppercase tracking-widest">Splitbeam</h2>
+<span class="text-[9px] text-primary/60 font-mono tracking-widest uppercase">Deep_Audit_v2.0</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-8 border-l border-panel-border pl-8">
+<a class="text-[11px] font-bold uppercase tracking-widest text-white transition-colors border-b-2 border-primary" href="#">Analysis</a>
+<a class="text-[11px] font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors" href="#">Growth Loops</a>
+<a class="text-[11px] font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors" href="#">Benchmarks</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary-hover text-background-dark px-5 py-2 rounded text-[11px] font-black uppercase transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">share</span> Share Audit
+            </button>
+</div>
+</div>
+</nav>
+<main class="max-w-[1600px] mx-auto p-6 space-y-6">
+<header class="bg-panel-dark border border-panel-border rounded-xl p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -mr-40 -mt-40"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-4xl">
+<div class="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-primary/10 border border-primary/20 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-4">
+                    Specialist Theatre &amp; Long-Term Rental Solution
+                </div>
+<h1 class="text-6xl font-black tracking-tight mb-4 uppercase">Splitbeam</h1>
+<p class="text-xl text-slate-gray leading-relaxed mb-8 max-w-3xl">
+                    A specialist equipment rental and technical production partner for theatre, education, and long-run productions, operating as part of the Gearhouse Group.
+                </p>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-background-dark px-6 py-2.5 rounded font-bold text-xs uppercase hover:bg-primary-hover transition-all">
+                        Request a consultation
+                    </button>
+<button class="bg-panel-border text-white px-6 py-2.5 rounded font-bold text-xs uppercase hover:bg-gray-700 transition-all">
+                        View Gearhouse group context
+                    </button>
+</div>
+</div>
+<div class="hidden lg:block text-right">
+<div class="text-[10px] text-gray-500 font-mono mb-2">AUDIT_STAMP_SECURE</div>
+<div class="text-2xl font-black text-primary">GH_SB_2024</div>
+</div>
+</div>
+</header>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6" id="overview">
+<div class="bg-panel-dark border border-panel-border rounded-xl p-8">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary p-2 bg-primary/10 rounded">theaters</span>
+<h3 class="text-xs font-black uppercase tracking-widest text-white">What this brand delivers</h3>
+</div>
+<p class="text-sm text-slate-gray leading-loose">
+                Splitbeam delivers specialized equipment rental with a core focus on <span class="text-white font-semibold">consistency, maximum uptime,</span> and the removal of financial burden through long-term rental models. They specialize in theatrical stability where technical reliability is the primary KPI for long-run productions and educational institutions.
+            </p>
+</div>
+<div class="bg-panel-dark border border-panel-border rounded-xl p-8">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary p-2 bg-primary/10 rounded">account_tree</span>
+<h3 class="text-xs font-black uppercase tracking-widest text-white">How it fits within the group</h3>
+</div>
+<p class="text-sm text-slate-gray leading-loose">
+                Acting as the <span class="text-white font-semibold">theatre specialist</span> of the group, Splitbeam provides a boutique, relationship-led entry point that can scale effortlessly via Gearhouse Group’s massive infrastructure and inventory <span class="text-white font-semibold">without requiring extra external suppliers</span>, streamlining the client's procurement chain.
+            </p>
+</div>
+</section>
+<section class="space-y-4" id="buyers">
+<div class="flex items-center gap-3">
+<h2 class="text-xs font-black uppercase tracking-[0.2em] text-gray-500">Primary Discovery Patterns</h2>
+<div class="h-px bg-panel-border flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-panel-dark border border-panel-border p-8 rounded-xl hover:border-primary/40 transition-all group">
+<span class="material-symbols-outlined text-primary text-3xl mb-6 group-hover:scale-110 transition-transform">diversity_3</span>
+<h4 class="font-bold text-sm mb-3 uppercase tracking-wider">Industry familiarity &amp; referrals</h4>
+<p class="text-xs text-gray-500 leading-relaxed">Leveraging a multi-decade footprint in the arts community where word-of-mouth remains the primary catalyst for new long-term contracts.</p>
+</div>
+<div class="bg-panel-dark border border-panel-border p-8 rounded-xl hover:border-primary/40 transition-all group">
+<span class="material-symbols-outlined text-primary text-3xl mb-6 group-hover:scale-110 transition-transform">manage_search</span>
+<h4 class="font-bold text-sm mb-3 uppercase tracking-wider">Problem-led search</h4>
+<p class="text-xs text-gray-500 leading-relaxed">High-intent searches triggered by specific pain points like equipment failure, budget constraints for ownership, or technical staffing gaps.</p>
+</div>
+<div class="bg-panel-dark border border-panel-border p-8 rounded-xl hover:border-primary/40 transition-all group">
+<span class="material-symbols-outlined text-primary text-3xl mb-6 group-hover:scale-110 transition-transform">verified</span>
+<h4 class="font-bold text-sm mb-3 uppercase tracking-wider">Peer validation</h4>
+<p class="text-xs text-gray-500 leading-relaxed">Visibility within high-profile production credits serves as proof of capability for institutional buyers and school bursars.</p>
+</div>
+</div>
+<div class="bg-primary/5 border-l-4 border-primary p-6 rounded-r-xl flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0">lightbulb</span>
+<div>
+<h5 class="text-[10px] font-black uppercase text-primary mb-1 tracking-widest">Audit insight: Niche vs. Adjacent Audiences</h5>
+<p class="text-sm text-gray-300 leading-relaxed">Discovery is heavily bifurcated between the core 'Theatre Elite' who know the brand, and 'Adjacent Institutional' (Schools/Venues) who require more problem-framed digital guidance to initiate contact.</p>
+</div>
+</div>
+</section>
+<section class="bg-panel-dark border border-panel-border rounded-xl overflow-hidden" id="priority">
+<div class="px-6 py-4 border-b border-panel-border flex items-center justify-between bg-background-dark/30">
+<h3 class="text-xs font-black uppercase tracking-widest">Priority Channels</h3>
+<span class="text-[9px] font-mono text-gray-500">REFINED_STRATEGY_2024</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs">
+<thead>
+<tr class="bg-background-dark/50 text-gray-500 uppercase font-black tracking-tighter">
+<th class="px-6 py-4 border-b border-panel-border">Rank / Channel</th>
+<th class="px-6 py-4 border-b border-panel-border">Audit Role</th>
+<th class="px-6 py-4 border-b border-panel-border">Strategic Outcome</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-panel-border/50">
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<span class="size-6 bg-primary text-background-dark rounded flex items-center justify-center font-black">1</span>
+<span class="font-bold text-gray-200 uppercase tracking-widest">Website</span>
+</div>
+</td>
+<td class="px-6 py-5 text-gray-400">Primary <span class="text-primary/80">Validation tool</span> for institutional buyers performing due diligence.</td>
+<td class="px-6 py-5">
+<span class="px-2 py-1 bg-primary/10 text-primary border border-primary/20 rounded font-bold">Inbound Technical Specs</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<span class="size-6 bg-gray-800 text-gray-400 rounded flex items-center justify-center font-black">2</span>
+<span class="font-bold text-gray-200 uppercase tracking-widest">Direct Relationships</span>
+</div>
+</td>
+<td class="px-6 py-5 text-gray-400"><span class="text-primary/80">Trust-based</span> core channel for securing long-term venue residencies.</td>
+<td class="px-6 py-5">
+<span class="px-2 py-1 bg-primary/10 text-primary border border-primary/20 rounded font-bold">Multi-Year SLAs</span>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<span class="size-6 bg-gray-800 text-gray-400 rounded flex items-center justify-center font-black">3</span>
+<span class="font-bold text-gray-200 uppercase tracking-widest">LinkedIn</span>
+</div>
+</td>
+<td class="px-6 py-5 text-gray-400"><span class="text-primary/80">Supporting role</span> for showcasing operational scale and large-scale crew deployment.</td>
+<td class="px-6 py-5">
+<span class="px-2 py-1 bg-primary/10 text-primary border border-primary/20 rounded font-bold">B2B Authority Play</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="space-y-4" id="deep-audit">
+<div class="flex items-center justify-between">
+<h2 class="text-xs font-black uppercase tracking-[0.2em] text-gray-500">Deep Audit: Gaps &amp; Improvements</h2>
+<div class="flex items-center gap-4">
+<section class="bg-panel-dark border border-panel-border rounded-xl p-4 flex gap-4" id="presence">
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 font-black uppercase mb-2">What Exists Today</span>
+<div class="flex gap-2 flex-wrap">
+<span class="text-[9px] bg-background-dark border border-panel-border px-2 py-1 rounded">One-page site</span>
+<span class="text-[9px] bg-background-dark border border-panel-border px-2 py-1 rounded">Theatre positioning</span>
+<span class="text-[9px] bg-background-dark border border-panel-border px-2 py-1 rounded">Long-term focus</span>
+<span class="text-[9px] bg-background-dark border border-panel-border px-2 py-1 rounded">Limited guidance</span>
+<span class="text-[9px] bg-background-dark border border-panel-border px-2 py-1 rounded">Implicit association</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-panel-dark border border-panel-border rounded-xl p-6 space-y-4">
+<div class="flex justify-between items-start">
+<h4 class="text-sm font-black text-primary uppercase">1. Service Copy vs. Problem Framing</h4>
+<span class="text-[9px] font-mono text-yellow-500/80 bg-yellow-500/10 px-2 py-1 rounded">PRIORITY: HIGH</span>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-background-dark/40 p-3 rounded border border-panel-border/50">
+<span class="text-[9px] uppercase font-bold text-gray-500 block mb-1">What we see</span>
+<p class="text-xs text-gray-300">Technical lists and equipment specifications dominate the current communication.</p>
+</div>
+<div class="bg-background-dark/40 p-3 rounded border border-panel-border/50">
+<span class="text-[9px] uppercase font-bold text-gray-500 block mb-1">Why this matters</span>
+<p class="text-xs text-gray-300">Bursars and venue managers buy "reliability" and "uptime," not just gear models.</p>
+</div>
+<div class="bg-primary/5 p-3 rounded border border-primary/20">
+<span class="text-[9px] uppercase font-bold text-primary block mb-1">Improvement Opportunity</span>
+<p class="text-xs text-primary/90">Reframing site copy around "Technical Peace of Mind" and "OpEx Efficiency."</p>
+</div>
+</div>
+</div>
+<div class="bg-panel-dark border border-panel-border rounded-xl p-6 space-y-4">
+<div class="flex justify-between items-start">
+<h4 class="text-sm font-black text-primary uppercase">2. Early Audience Qualification</h4>
+<span class="text-[9px] font-mono text-blue-500/80 bg-blue-500/10 px-2 py-1 rounded">PRIORITY: MEDIUM</span>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-background-dark/40 p-3 rounded border border-panel-border/50">
+<span class="text-[9px] uppercase font-bold text-gray-500 block mb-1">What we see</span>
+<p class="text-xs text-gray-300">Single entry point for all leads regardless of production scale.</p>
+</div>
+<div class="bg-background-dark/40 p-3 rounded border border-panel-border/50">
+<span class="text-[9px] uppercase font-bold text-gray-500 block mb-1">Why this matters</span>
+<p class="text-xs text-gray-300">Wastes high-value sales time on low-intent or ill-fitted short-term rental queries.</p>
+</div>
+<div class="bg-primary/5 p-3 rounded border border-primary/20">
+<span class="text-[9px] uppercase font-bold text-primary block mb-1">Improvement Opportunity</span>
+<p class="text-xs text-primary/90">Implement a 'Type of Production' selector to filter leads by duration and scale.</p>
+</div>
+</div>
+</div>
+<div class="bg-panel-dark border border-panel-border rounded-xl p-6 space-y-4">
+<div class="flex justify-between items-start">
+<h4 class="text-sm font-black text-primary uppercase">3. Gearhouse Group Strength</h4>
+<span class="text-[9px] font-mono text-primary/80 bg-primary/10 px-2 py-1 rounded">PRIORITY: STRATEGIC</span>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-background-dark/40 p-3 rounded border border-panel-border/50">
+<span class="text-[9px] uppercase font-bold text-gray-500 block mb-1">What we see</span>
+<p class="text-xs text-gray-300">Minimal mention of the massive resource pool behind the brand.</p>
+</div>
+<div class="bg-background-dark/40 p-3 rounded border border-panel-border/50">
+<span class="text-[9px] uppercase font-bold text-gray-500 block mb-1">Why this matters</span>
+<p class="text-xs text-gray-300">Large tenders require proof of "bench depth" and contingency planning.</p>
+</div>
+<div class="bg-primary/5 p-3 rounded border border-primary/20">
+<span class="text-[9px] uppercase font-bold text-primary block mb-1">Improvement Opportunity</span>
+<p class="text-xs text-primary/90">Showcase 'Resource Scalability' as a primary competitive advantage.</p>
+</div>
+</div>
+</div>
+<div class="bg-panel-dark border border-panel-border rounded-xl p-6 space-y-4">
+<div class="flex justify-between items-start">
+<h4 class="text-sm font-black text-primary uppercase">4. Long-Term vs Short-Term Value</h4>
+<span class="text-[9px] font-mono text-orange-500/80 bg-orange-500/10 px-2 py-1 rounded">PRIORITY: DIFFERENTIATION</span>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-background-dark/40 p-3 rounded border border-panel-border/50">
+<span class="text-[9px] uppercase font-bold text-gray-500 block mb-1">What we see</span>
+<p class="text-xs text-gray-300">Rental model value is not visually explained or quantified.</p>
+</div>
+<div class="bg-background-dark/40 p-3 rounded border border-panel-border/50">
+<span class="text-[9px] uppercase font-bold text-gray-500 block mb-1">Why this matters</span>
+<p class="text-xs text-gray-300">Hard to justify multi-year commitments without a clear "Rent vs. Buy" logic.</p>
+</div>
+<div class="bg-primary/5 p-3 rounded border border-primary/20">
+<span class="text-[9px] uppercase font-bold text-primary block mb-1">Improvement Opportunity</span>
+<p class="text-xs text-primary/90">Develop a 'Total Cost of Ownership' calculator for long-run venues.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-4" id="performance">
+<div class="flex items-center gap-3">
+<h2 class="text-xs font-black uppercase tracking-[0.2em] text-gray-500">Performance &amp; Digital Readiness</h2>
+<div class="h-px bg-panel-border flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="bg-panel-dark border border-panel-border p-6 rounded-xl flex flex-col items-center">
+<div class="text-4xl font-black text-primary mb-1">83</div>
+<span class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Performance</span>
+<div class="w-full bg-background-dark h-1 mt-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 83%"></div>
+</div>
+</div>
+<div class="bg-panel-dark border border-panel-border p-6 rounded-xl flex flex-col items-center">
+<div class="text-4xl font-black text-yellow-500 mb-1">56</div>
+<span class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Accessibility</span>
+<div class="w-full bg-background-dark h-1 mt-4 rounded-full overflow-hidden">
+<div class="bg-yellow-500 h-full" style="width: 56%"></div>
+</div>
+</div>
+<div class="bg-panel-dark border border-panel-border p-6 rounded-xl flex flex-col items-center">
+<div class="text-4xl font-black text-primary mb-1">96</div>
+<span class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Best Practices</span>
+<div class="w-full bg-background-dark h-1 mt-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 96%"></div>
+</div>
+</div>
+<div class="bg-panel-dark border border-panel-border p-6 rounded-xl flex flex-col items-center">
+<div class="text-4xl font-black text-red-500 mb-1">36</div>
+<span class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">SEO</span>
+<div class="w-full bg-background-dark h-1 mt-4 rounded-full overflow-hidden">
+<div class="bg-red-500 h-full" style="width: 36%"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-panel-dark/40 border border-panel-border p-6 rounded-xl">
+<h4 class="text-[10px] font-black uppercase text-primary mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">visibility</span> Audit Interpretation
+                </h4>
+<p class="text-sm text-gray-400 leading-relaxed">Technical stability is present, but <span class="text-white">clarity is often sacrificed for brevity.</span> The low SEO score indicates that while the site validates existing trust, it fails to capture problem-led search traffic from non-theatre sectors.</p>
+</div>
+<div class="bg-panel-dark/40 border border-panel-border p-6 rounded-xl">
+<h4 class="text-[10px] font-black uppercase text-primary mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">trending_up</span> Lead Impact
+                </h4>
+<p class="text-sm text-gray-400 leading-relaxed">Performance is sufficient for desktop-led procurement, but the lack of accessibility focus may exclude government or institutional tenders that require high compliance standards.</p>
+</div>
+</div>
+</section>
+<section class="bg-panel-dark border border-panel-border rounded-xl p-8" id="additional">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="shrink-0">
+<div class="size-20 rounded-full border-4 border-red-500/20 flex items-center justify-center text-red-500">
+<span class="material-symbols-outlined text-4xl">block</span>
+</div>
+</div>
+<div class="flex-grow">
+<h3 class="text-xs font-black uppercase tracking-widest mb-3 text-white">Channel Expansion Recommendation</h3>
+<div class="bg-background-dark/50 border-l-4 border-red-500 p-5 rounded-r-lg">
+<h4 class="text-red-500 text-[10px] font-black uppercase mb-2 tracking-[0.2em]">Decision: No Expansion</h4>
+<p class="text-sm text-gray-300 leading-relaxed">
+                        Expanding to broader social channels is currently not recommended. For Splitbeam, <span class="text-white font-bold uppercase tracking-tighter">Trust outweighs Reach.</span> Focus on deepening niche relevance within existing networks rather than diluting the "theatre specialist" prestige through generic awareness campaigns.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-panel-dark border border-panel-border rounded-xl p-8" id="context">
+<h3 class="text-xs font-black uppercase tracking-widest mb-6">Group Context &amp; Expansion Potential</h3>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-6">
+<p class="text-sm text-slate-gray leading-loose">
+                    Understanding Splitbeam's placement within the Gearhouse Group is essential for high-level tenders. The brand serves as a specialized gateway, offering clients a high-touch, boutique service model while simultaneously providing the massive logistical security of the continent's largest technical supplier.
+                </p>
+<div class="bg-primary/5 border border-primary/20 p-6 rounded-xl">
+<span class="text-[10px] font-black uppercase text-primary block mb-2 tracking-widest">Growth Loop: Land, Expand, Retain</span>
+<div class="grid grid-cols-3 gap-4 pt-2">
+<div class="text-center p-3 bg-background-dark rounded border border-panel-border">
+<span class="material-symbols-outlined text-primary mb-2">anchor</span>
+<div class="text-[10px] font-black uppercase mb-1">Land</div>
+<div class="text-[9px] text-gray-500">Niche Theatre Rental</div>
+</div>
+<div class="text-center p-3 bg-background-dark rounded border border-panel-border">
+<span class="material-symbols-outlined text-primary mb-2">add_circle</span>
+<div class="text-[10px] font-black uppercase mb-1">Expand</div>
+<div class="text-[9px] text-gray-500">Group AV &amp; Staging</div>
+</div>
+<div class="text-center p-3 bg-background-dark rounded border border-panel-border">
+<span class="material-symbols-outlined text-primary mb-2">sync</span>
+<div class="text-[10px] font-black uppercase mb-1">Retain</div>
+<div class="text-[9px] text-gray-500">Multi-Year Partners</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-background-dark border border-panel-border p-6 rounded-xl relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative z-10">
+<h4 class="text-[10px] font-black uppercase tracking-widest mb-4 text-primary">Strategic Context Note</h4>
+<p class="text-xs text-gray-400 italic leading-relaxed mb-4">
+                        "The association with Gearhouse must be positioned as a 'resource safety net.' Clients want the agility of a specialist but the insurance of a powerhouse."
+                    </p>
+<div class="pt-4 border-t border-panel-border">
+<div class="flex items-center justify-between text-[10px] font-mono text-gray-600">
+<span>RELIABILITY_INDEX</span>
+<span class="text-primary">98.4%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="mt-12 border-t border-panel-border bg-panel-dark/50 backdrop-blur-md">
+<div class="max-w-[1600px] mx-auto px-6 py-12">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-md">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<h3 class="text-xs font-black uppercase tracking-widest">Closing Audit Note</h3>
+</div>
+<p class="text-sm text-gray-400 leading-relaxed">
+                    The primary growth opportunity lies in <span class="text-white font-semibold">problem framing</span>—shifting the digital narrative from technical specifications to operational stability. By better leveraging the Gearhouse Group identity as a security layer, Splitbeam can move from being a 'vendor' to a 'strategic production partner.'
+                </p>
+</div>
+<div class="flex gap-8">
+<a class="flex flex-col group" href="#">
+<span class="text-[10px] text-gray-500 font-black uppercase mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xs">arrow_back</span> Previous Brand
+                    </span>
+<span class="text-sm font-bold text-gray-200">Gearhouse South Africa</span>
+</a>
+<a class="flex flex-col items-end group text-right" href="#">
+<span class="text-[10px] text-gray-500 font-black uppercase mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
+                        Next Brand <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</span>
+<span class="text-sm font-bold text-gray-200">LEDVision</span>
+</a>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-panel-border/30 flex justify-between items-center text-[9px] font-mono text-gray-600">
+<span>© 2024 GEARHOUSE_GROUP_AUDIT_PROTOCOL</span>
+<span class="text-primary/40 uppercase">Confidential Intelligence Report</span>
+</div>
+</div>
+</footer>
+
+</body></html>

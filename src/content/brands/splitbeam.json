@@ -1,22 +1,33 @@
 {
   "slug": "splitbeam",
   "name": "Splitbeam",
+  "logo": "/logos/splitbeam.png",
+  "role_tag": "Professional Theatre Lighting Rental",
   "metrics": {
-    "lcp": "3.4s",
-    "fcp": "0.9s",
-    "ttfb": "N/A",
-    "cls": "0.002",
-    "score": 72,
-    "tbt": "40ms"
+    "performance": 72,
+    "accessibility": 89,
+    "bestPractices": 100,
+    "seo": 92
   },
   "sections": {
     "overview": "Splitbeam is a leading provider in the technical event industry.",
+    "decision_context": "The decision is whether to own and maintain equipment internally or partner with a specialist who provides consistency, predictability, and technical continuity over time.",
     "how_buyers_find": "Mostly through direct search and industry referrals.",
     "priority_channels": [
       "Organic Search",
       "Direct",
       "LinkedIn"
     ],
+    "target_audience": {
+      "primary": "Theatre professionals, venue managers, and schools responsible for long-run productions and consistent technical delivery.",
+      "motivators": "Buyers value predictability, budget stability, and technical continuity. They prioritise solutions that remove operational uncertainty over time.",
+      "validation_channels": [
+        "Theatre and education networks",
+        "Direct referrals",
+        "Website validation for long-term rental confidence"
+      ],
+      "lead_quality": "Leads convert through trust and relevance rather than broad visibility."
+    },
     "current_presence": "Established website with portfolio showcases.",
     "gaps_improvements": [
       {
@@ -28,6 +39,7 @@
         "impact": "Lower conversion on landing pages"
       }
     ],
+    "brand_limitations": "Splitbeam should not chase high-volume, short-term rental demand outside its specialist focus. Its strength is long-run reliability, not transactional hire.",
     "performance_leakage": "Site performance is hindering user retention.",
     "additional_channels": [
       "Instagram for visual portfolio",

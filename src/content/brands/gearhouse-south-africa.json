@@ -1,12 +1,13 @@
 {
   "slug": "gearhouse-south-africa",
   "name": "Gearhouse South Africa",
+  "logo": "/logos/gearhouse.png",
+  "role_tag": "360° Technical Production Services",
   "metrics": {
-    "lcp": "6.2s",
-    "fcp": "5.8s",
-    "ttfb": "4.4s",
-    "cls": "0.01",
-    "score": 63
+    "performance": 63,
+    "accessibility": 92,
+    "bestPractices": 100,
+    "seo": 92
   },
   "sections": {
     "overview": "Gearhouse South Africa is a leading provider in the technical event industry.",

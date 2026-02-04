@@ -1,38 +1,78 @@
 {
   "slug": "ledvision",
-  "name": "LEDVision",
+  "name": "LEDvision",
+  "role_tag": "Daylight LED Screen Rental & Visual Display Specialist",
   "metrics": {
-    "lcp": "2.2s",
-    "fcp": "0.8s",
-    "ttfb": "N/A",
-    "cls": "0.007",
-    "score": 81,
-    "tbt": "40ms"
+    "performance": 81,
+    "accessibility": 95,
+    "bestPractices": 100,
+    "seo": 100
   },
   "sections": {
-    "overview": "LEDVision is a leading provider in the technical event industry.",
-    "how_buyers_find": "Mostly through direct search and industry referrals.",
-    "priority_channels": [
-      "Organic Search",
-      "Direct",
-      "LinkedIn"
-    ],
-    "current_presence": "Established website with portfolio showcases.",
-    "gaps_improvements": [
+    "overview": "LEDvision delivers large-format, high-brightness LED screen rental and visual display solutions for live events, broadcast productions, and high-visibility environments, operating as a specialist capability within the Gearhouse Group.",
+    "what_delivers": "LEDvision provides modular and mobile LED video technology designed for environments with high ambient light, where visibility, reliability, and visual impact are critical. The brand specialises in turnkey delivery, including screens, support structures, power, signal distribution, and technical operation.\n\nIts value is strongest in situations where failure is highly visible, timelines are compressed, and visual clarity directly affects audience experience or broadcast outcomes.",
+    "decision_context": "The buyer is choosing between visual impact with execution certainty versus experimental or under-resourced solutions. This is a reputational risk decision where failure is public and immediate.",
+    "how_it_fits": "LEDvision is the group’s visual display and daylight screen specialist. It strengthens Gearhouse’s ability to deliver visually dominant experiences without relying on third-party LED suppliers, particularly for outdoor, broadcast, and large-scale public events.\n\nWithin the group, LEDvision often operates as a high-impact module that integrates closely with staging, structures, audio, and production management.",
+    "discovery_patterns": [
       {
-        "gap": "Slow mobile load times",
-        "impact": "High bounce rate on mobile devices"
+        "title": "Problem-led search for visibility challenges",
+        "description": "Buyers typically arrive when standard projection or indoor screens fail to meet visibility requirements, especially in daylight or outdoor environments.",
+        "icon": "wb_sunny"
       },
       {
-        "gap": "Lack of clear CTA",
-        "impact": "Lower conversion on landing pages"
+        "title": "Event and broadcast referrals",
+        "description": "LEDvision is often introduced by production managers, agencies, or broadcasters who understand the consequences of visual failure.",
+        "icon": "videocam"
+      },
+      {
+        "title": "Late-stage technical validation",
+        "description": "In many cases, LEDvision is brought in once creative concepts are approved and technical feasibility becomes critical.",
+        "icon": "fact_check"
       }
     ],
-    "performance_leakage": "Site performance is hindering user retention.",
-    "additional_channels": [
-      "Instagram for visual portfolio",
-      "Email newsletters"
+    "how_buyers_find": "See discovery patterns",
+    "priority_channels": [
+      "Website",
+      "Direct relationships and referrals"
     ],
-    "land_expand": "Cross-sell opportunities with sister companies."
+    "target_audience": {
+      "primary": "Event producers, agencies, broadcasters, and brand managers responsible for visually critical moments.",
+      "motivators": "These buyers are motivated by reliability under pressure and visual impact in uncontrolled environments. Public failure carries reputational risk.",
+      "validation_channels": [
+        "Production and broadcast referrals",
+        "Proof of scale and redundancy",
+        "Website reassurance around delivery capability"
+      ],
+      "lead_quality": "High-quality leads prioritise certainty and execution over experimentation."
+    },
+    "current_presence": "See How it fits",
+    "gaps_improvements": [
+      {
+        "gap": "Visual impact framed as a feature, not a risk mitigator",
+        "impact": "LED screens are often chosen to avoid reputational, broadcast, or sponsor risk, not just to “look good.”",
+        "improvement_opportunity": "Explicitly frame LEDvision as a risk-mitigation partner for high-visibility moments, not just a screen supplier."
+      },
+      {
+        "gap": "Turnkey nature underplayed",
+        "impact": "Buyers often underestimate the complexity of power, signal, structures, and operation until something fails.",
+        "improvement_opportunity": "Position LEDvision as a fully accountable visual system owner rather than a collection of components."
+      },
+      {
+        "gap": "Limited early-stage creative influence",
+        "impact": "Earlier involvement can improve creative outcomes, reduce rework, and avoid technical compromises.",
+        "improvement_opportunity": "Encourage earlier engagement by framing LEDvision as a creative enabler, not just an execution vendor."
+      },
+      {
+        "gap": "Group capability not clearly surfaced",
+        "impact": "Clients may not realise that LEDvision benefits from integrated access to structures, staging, and production management.",
+        "improvement_opportunity": "Clearly position LEDvision as part of an integrated delivery ecosystem capable of supporting complex, multi-discipline builds."
+      }
+    ],
+    "brand_limitations": "LEDvision should not attempt broad awareness marketing or low-budget creative experimentation. Its positioning depends on trust, scale, and reliability under pressure.",
+    "performance_leakage": "LEDvision demonstrates strong digital readiness (81) and technical hygiene (SEO 100, Best Practices 100), supporting credibility during validation. Lead volume and quality are more influenced by positioning and timing of engagement than by digital performance.",
+    "additional_channels": [
+      "Audit Rec: No broader channel expansion required."
+    ],
+    "land_expand": "LED screen requirements often trigger additional needs across structures, staging, audio, power, and broadcast support."
   }
 }

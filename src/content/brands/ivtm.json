@@ -1,38 +1,79 @@
 {
   "slug": "ivtm",
   "name": "IVTM",
+  "logo": "/logos/ivtm.png",
+  "role_tag": "Embedded Venue Technical Partner",
   "metrics": {
-    "lcp": "12.8s",
-    "fcp": "3.8s",
-    "ttfb": "N/A",
-    "cls": "0.001",
-    "score": 57,
-    "tbt": "140ms"
+    "performance": 57,
+    "accessibility": 95,
+    "bestPractices": 100,
+    "seo": 100
   },
   "sections": {
-    "overview": "IVTM is a leading provider in the technical event industry.",
-    "how_buyers_find": "Mostly through direct search and industry referrals.",
-    "priority_channels": [
-      "Organic Search",
-      "Direct",
-      "LinkedIn"
-    ],
-    "current_presence": "Established website with portfolio showcases.",
-    "gaps_improvements": [
+    "overview": "IVTM provides permanent, on-site technical management and equipment services for venues, convention centres, hotels, and entertainment spaces, operating as a specialist capability within the Gearhouse Group.",
+    "what_delivers": "IVTM delivers ongoing venue-based technical management, supplying both equipment and skilled personnel to ensure venues remain operational, current, and technically capable on a day-to-day basis. Unlike event-specific suppliers, IVTM operates as an embedded partner, integrating directly into a venue’s operations.\n\nIts value lies in continuity, uptime, and institutional knowledge. IVTM removes the operational burden of managing in-house technical infrastructure, staffing, and last-minute technical demands, allowing venues to focus on commercial and guest experience outcomes.",
+    "decision_context": "The buyer is deciding whether to run technical operations in-house or adopt a managed operating model that transfers risk, staffing complexity, and continuity responsibility to a specialist partner.",
+    "how_it_fits": "IVTM is the group’s permanent venue operations specialist. It enables Gearhouse to extend beyond project-based delivery into long-term operational partnerships, embedding the group inside venues where events and productions recur.\n\nWithin the group ecosystem, IVTM often acts as an anchor relationship, creating downstream opportunities for other Gearhouse capabilities as venue needs evolve.",
+    "discovery_patterns": [
       {
-        "gap": "Slow mobile load times",
-        "impact": "High bounce rate on mobile devices"
+        "title": "Operational pain-driven search",
+        "description": "Buyers typically arrive when in-house technical teams are stretched, outdated, or unable to support increasing complexity and frequency of events.",
+        "icon": "report_problem"
       },
       {
-        "gap": "Lack of clear CTA",
-        "impact": "Lower conversion on landing pages"
+        "title": "Venue network referrals",
+        "description": "Discovery is often driven by venue managers, hospitality groups, or operators sharing operational best practices.",
+        "icon": "share_location"
+      },
+      {
+        "title": "Reactive engagement",
+        "description": "IVTM is frequently considered after technical failures, staffing gaps, or reputational risk events expose operational weaknesses.",
+        "icon": "crisis_alert"
       }
     ],
-    "performance_leakage": "Site performance is hindering user retention.",
-    "additional_channels": [
-      "Instagram for visual portfolio",
-      "Email newsletters"
+    "how_buyers_find": "See discovery patterns",
+    "priority_channels": [
+      "Website",
+      "Direct relationships and referrals"
     ],
-    "land_expand": "Cross-sell opportunities with sister companies."
+    "target_audience": {
+      "primary": "Venue owners, venue managers, and operations leaders responsible for daily technical performance, uptime, and safety.",
+      "motivators": "These buyers are motivated by continuity, risk avoidance, and reputational protection. Technical failure directly impacts guest experience and revenue.",
+      "validation_channels": [
+        "Venue and hospitality referrals",
+        "Website reassurance around reliability and coverage",
+        "Proven operational track record"
+      ],
+      "lead_quality": "Qualified leads prioritise long-term stability over short-term cost savings."
+    },
+    "current_presence": "See How it fits",
+    "gaps_improvements": [
+      {
+        "gap": "Technical services framed without operational risk context",
+        "impact": "Venue decision-makers are motivated by risk avoidance, reputation protection, and revenue continuity.",
+        "improvement_opportunity": "Explicitly frame IVTM as a risk-reduction and continuity partner, not just a technical service provider."
+      },
+      {
+        "gap": "Embedded partnership value under-articulated",
+        "impact": "Embedded partnerships justify long-term contracts and budget allocation, especially in cost-sensitive environments.",
+        "improvement_opportunity": "Strengthen messaging around institutional knowledge, consistency, and operational memory."
+      },
+      {
+        "gap": "Gearhouse ecosystem not clearly surfaced",
+        "impact": "Venues may not realise that IVTM provides a gateway to larger event production and infrastructure support when required.",
+        "improvement_opportunity": "Position IVTM as the operational anchor that unlocks access to the full Gearhouse Group."
+      },
+      {
+        "gap": "Strategic value not differentiated from ad-hoc outsourcing",
+        "impact": "Without contrast, buyers may default to cheaper, less reliable alternatives.",
+        "improvement_opportunity": "Clearly articulate the long-term operational and financial advantages of embedded technical management."
+      }
+    ],
+    "brand_limitations": "IVTM should not position itself as ad-hoc technical support or a reactive call-out service. Its value lies in embedded, long-term operational ownership.",
+    "performance_leakage": "The site demonstrates strong accessibility (95) and technical hygiene (SEO 100), supporting enterprise trust. Performance is moderate (57) but unlikely to be a conversion blocker. Lead quality is more affected by clarity of positioning and articulation of long-term value than by digital performance.",
+    "additional_channels": [
+      "Audit Rec: No broader channel expansion required."
+    ],
+    "land_expand": "Venues with embedded technical partners often evolve into hosts for larger, more complex events requiring broader production capability."
   }
 }

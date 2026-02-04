@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gearhouse Audit | Data Analyst Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981", // Emerald 500
+                        "primary-hover": "#059669",
+                        "background-dark": "#0b0f14",
+                        "panel-dark": "#111827",
+                        "panel-border": "#1f2937",
+                        "charcoal": "#090c11",
+                        "slate-gray": "#9ca3af"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-dark text-gray-100 selection:bg-primary/30;
+            }
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1rem;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            @apply bg-panel-border rounded-full;
+        }
+    </style>
+</head>
+<body class="font-display">
+<nav class="sticky top-0 z-50 w-full bg-background-dark/80 backdrop-blur-md border-b border-panel-border">
+<div class="max-w-[1600px] mx-auto px-4 h-14 flex items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl font-bold">analytics</span>
+<div class="flex flex-col -space-y-1">
+<h2 class="text-[12px] font-black tracking-tight uppercase">Gearhouse Lead Gen Audit</h2>
+<span class="text-[9px] text-primary/60 font-mono tracking-widest">VERSION_2.4.0_SOUTH_AFRICA</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-6 border-l border-panel-border pl-6">
+<a class="text-[11px] font-bold uppercase tracking-widest text-primary" href="#">Dashboard</a>
+<a class="text-[11px] font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors" href="#brands">Brands</a>
+<a class="text-[11px] font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors" href="#methodology">Methodology</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex flex-col items-end">
+<span class="text-[9px] text-gray-500 font-mono">DATA_LAST_SYNC: 2024-05-22</span>
+<span class="text-[9px] text-emerald-500 font-mono">STATUS: ACTIVE_OPTIMIZED</span>
+</div>
+<button class="bg-primary hover:bg-primary-hover text-background-dark px-4 py-1.5 rounded text-[11px] font-black uppercase transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span> Export Report
+            </button>
+</div>
+</div>
+</nav>
+<main class="max-w-[1600px] mx-auto p-4 space-y-4">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+<header class="lg:col-span-5 bg-panel-dark border border-panel-border rounded-xl p-6 flex flex-col justify-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+<div class="relative z-10 space-y-4">
+<div class="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-primary/10 border border-primary/20 text-primary text-[10px] font-black uppercase tracking-[0.2em]">
+                    Demand &amp; Lead Generation Audit
+                </div>
+<h1 class="text-3xl font-black leading-tight tracking-tight">
+                    A clear view of what’s driving leads, and what’s <span class="text-primary underline decoration-2 underline-offset-4">leaking</span> them.
+                </h1>
+<p class="text-sm text-slate-gray max-w-md leading-relaxed">
+                    This interactive audit helps Gearhouse align channels, messaging, and digital experience around one goal: more qualified enquiries, not just presence.
+                </p>
+<div class="flex items-center gap-4 pt-2">
+<button class="bg-primary text-background-dark px-5 py-2 rounded font-bold text-xs uppercase hover:bg-primary-hover transition-all">
+                        Explore the brands
+                    </button>
+<a class="flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-white transition-colors" href="#methodology">
+                        Read the methodology
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<section class="lg:col-span-7 bg-panel-dark border border-panel-border rounded-xl p-6 flex flex-col">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">query_stats</span>
+<h2 class="text-sm font-black uppercase tracking-widest">Group-level snapshot</h2>
+</div>
+<div class="flex gap-2">
+<span class="px-2 py-0.5 bg-background-dark border border-panel-border text-[9px] text-gray-400 rounded">LIVE_FEED</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex-grow">
+<div class="bg-background-dark/50 border border-panel-border p-4 rounded-lg flex flex-col justify-between group hover:border-primary/40 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<h4 class="text-xs font-black uppercase tracking-tighter text-gray-300">Channel alignment</h4>
+<span class="material-symbols-outlined text-sm text-primary">hub</span>
+</div>
+<p class="text-[11px] text-gray-500 leading-normal">Synchronizing social, search, and direct channels to ensure a unified market message and reduced spend waste across the group.</p>
+</div>
+</div>
+<div class="bg-background-dark/50 border border-panel-border p-4 rounded-lg flex flex-col justify-between group hover:border-primary/40 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<h4 class="text-xs font-black uppercase tracking-tighter text-gray-300">Lead capture</h4>
+<span class="material-symbols-outlined text-sm text-primary">target</span>
+</div>
+<p class="text-[11px] text-gray-500 leading-normal">Optimizing forms, landing pages, and UX to reduce friction and convert high-intent traffic into qualified sales enquiries.</p>
+</div>
+</div>
+<div class="bg-background-dark/50 border border-panel-border p-4 rounded-lg flex flex-col justify-between group hover:border-primary/40 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<h4 class="text-xs font-black uppercase tracking-tighter text-gray-300">Proof and credibility</h4>
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+</div>
+<p class="text-[11px] text-gray-500 leading-normal">Leveraging the authority of the Gearhouse Group to build instant trust with large-scale event planners and corporate clients.</p>
+</div>
+</div>
+<div class="bg-background-dark/50 border border-panel-border p-4 rounded-lg flex flex-col justify-between group hover:border-primary/40 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<h4 class="text-xs font-black uppercase tracking-tighter text-gray-300">Performance leakage</h4>
+<span class="material-symbols-outlined text-sm text-red-500">leak_add</span>
+</div>
+<p class="text-[11px] text-gray-500 leading-normal">Identifying drop-off points in the funnel where prospective leads are lost to competitors or technical errors.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section class="bg-panel-dark border border-panel-border rounded-xl p-6" id="brands">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<div>
+<h2 class="text-sm font-black uppercase tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">grid_view</span>
+                    Explore the brands
+                </h2>
+<p class="text-[11px] text-gray-500 uppercase tracking-tight font-medium mt-1">Each brand page follows the same audit structure so comparisons are easy.</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-sm text-gray-500">search</span>
+<input class="bg-background-dark border-panel-border text-xs rounded py-1.5 pl-8 pr-4 w-64 focus:ring-primary focus:border-primary placeholder:text-gray-700" placeholder="Filter specialist brands..." type="text"/>
+</div>
+<div class="flex border border-panel-border rounded overflow-hidden">
+<button class="px-2 py-1.5 bg-primary text-background-dark"><span class="material-symbols-outlined text-sm">grid_view</span></button>
+<button class="px-2 py-1.5 bg-background-dark text-gray-500"><span class="material-symbols-outlined text-sm">list</span></button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+<script>
+                const brands = [
+                    { name: "Gearhouse", tag: "The Umbrella", desc: "The core technical production provider for major events." },
+                    { name: "Gearhouse South Africa", tag: "Regional Hub", desc: "Leading event services provider in the SA region." },
+                    { name: "System Solutions", tag: "Integration", desc: "Permanent AV installation and professional systems." },
+                    { name: "LEDVision", tag: "Screen Tech", desc: "State-of-the-art LED screen technology and rentals." },
+                    { name: "In2Structures", tag: "Structures", desc: "Specialist portable venue and dome solutions." },
+                    { name: "Havaseat", tag: "Seating", desc: "Temporary grandstands and tiered seating specialists." },
+                    { name: "Splitbeam", tag: "Lighting", desc: "Professional lighting equipment hire and design." },
+                    { name: "ShowCom", tag: "Telecoms", desc: "Event communication systems and networking." },
+                    { name: "IVTM", tag: "Virtual", desc: "Interactive virtual and hybrid event platforms." },
+                    { name: "SDS", tag: "Design", desc: "Technical structural design and engineering services." }
+                ];
+                brands.forEach(brand => {
+                    document.write(`
+                        <div class="bg-background-dark/30 border border-panel-border p-4 rounded flex flex-col group hover:bg-background-dark hover:border-primary/40 transition-all cursor-pointer">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="size-9 bg-primary/10 border border-primary/20 rounded flex items-center justify-center font-black text-primary text-xs">
+                                    ${brand.name.charAt(0).toUpperCase()}${brand.name.split(' ').length > 1 ? brand.name.split(' ')[1].charAt(0).toUpperCase() : brand.name.charAt(1).toUpperCase()}
+                                </div>
+                                <span class="px-1.5 py-0.5 bg-gray-800 text-gray-400 text-[8px] font-black rounded uppercase tracking-tighter">${brand.tag}</span>
+                            </div>
+                            <h4 class="text-xs font-bold truncate mb-1 text-gray-200 group-hover:text-primary transition-colors">${brand.name}</h4>
+                            <p class="text-gray-500 text-[10px] mb-4 flex-grow leading-relaxed line-clamp-2">${brand.desc}</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-panel-border/30">
+                                <span class="text-[9px] font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity">VIEW DATA</span>
+                                <span class="material-symbols-outlined text-[14px] text-gray-600 group-hover:text-primary">arrow_forward_ios</span>
+                            </div>
+                        </div>
+                    `);
+                });
+            </script>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+<section class="lg:col-span-8 bg-panel-dark border border-panel-border rounded-xl p-6" id="methodology">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-sm font-black uppercase tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">terminal</span>
+                    How to use this audit
+                </h2>
+<span class="text-[10px] text-gray-500 font-mono tracking-tighter">DOC_ID: GH_METH_2024</span>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<p class="text-[12px] text-slate-gray leading-relaxed">
+                        This audit explores the dynamic between the Gearhouse "Umbrella" and its specialist brands. While specialist brands often capture high-intent, niche-specific leads, the Gearhouse Group brand provides the safety and scale required for major contracts. 
+                    </p>
+<p class="text-[12px] text-slate-gray leading-relaxed">
+                        The goal of this dashboard is to highlight where lead generation efforts can be cross-pollinated, ensuring that a specialist enquiry doesn't miss the broader group capability, and vice versa.
+                    </p>
+<div class="pt-2">
+<h4 class="text-[10px] font-black text-primary uppercase mb-3 tracking-widest">Core Objectives</h4>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-[11px] text-gray-400">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Analyze cross-brand lead migration patterns.</span>
+</div>
+<div class="flex items-center gap-3 text-[11px] text-gray-400">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Evaluate performance of the 'Full-Stack' promise.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="bg-red-500/5 border border-red-500/20 p-5 rounded-lg relative overflow-hidden">
+<div class="flex items-center gap-2 mb-3 text-red-500">
+<span class="material-symbols-outlined text-lg">error</span>
+<h3 class="font-black text-[11px] uppercase tracking-widest">What we did not do</h3>
+</div>
+<p class="text-[11px] text-gray-400 leading-relaxed relative z-10">
+                            This audit does not include deep-dive competitor benchmarking. Instead, we focused exclusively on Gearhouse's internal ecosystem to find and fix "self-inflicted" lead leakage before looking outward at the competitive landscape.
+                        </p>
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-7xl text-red-500/10">search_off</span>
+</div>
+<div class="bg-background-dark/50 border border-panel-border p-4 rounded-lg flex items-center gap-4">
+<div class="h-16 w-16 bg-gray-800 rounded flex-shrink-0 grayscale opacity-40">
+<img alt="Office" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrPXs4W_9abj1Ae3xjpxMYJXAKVxbYBsRwIlRLDF4lw9eyDxiO1BoUkanYBdS_vaB9JKOSGwfPQr5D8XSSzbowoOddKevo9J1BEjt3Tb9pW2CrxmAjkjKDqESomT7iOlgZhL9eJHK2qIGfQVlqn0aAGN6Vbd6LpSuiV98EW8jboAbTEFNzlvexHQ9QBfsUbLnCmbb6STNmAe8iDpSm7ieHi6VUH-ZCQ4YJQPGZ58voMeytq0d7UaGk5irKHk9_1MBMfP0sN5zCj8CI"/>
+</div>
+<div>
+<span class="text-[9px] text-primary font-bold uppercase tracking-widest">Infrastructure</span>
+<p class="text-[10px] text-gray-500 leading-tight">Focusing on market-facing demand generation and channel alignment.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="lg:col-span-4 bg-panel-dark border border-panel-border rounded-xl p-6">
+<h2 class="text-sm font-black uppercase tracking-widest mb-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">hub</span>
+                Gearhouse as the umbrella
+            </h2>
+<p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest mb-4">Why Gearhouse leads with a full-stack promise</p>
+<div class="space-y-4">
+<p class="text-[11px] text-slate-gray leading-relaxed mb-4">
+                    In the complex world of event production, clients increasingly seek one accountable partner who can handle everything from power and sound to structures and virtual integration.
+                </p>
+<div class="space-y-3">
+<div class="p-3 bg-background-dark/50 border border-panel-border rounded-lg group hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-3 mb-1">
+<span class="material-symbols-outlined text-primary text-lg">handshake</span>
+<h4 class="text-xs font-bold text-gray-200">One accountable partner</h4>
+</div>
+<p class="text-[10px] text-gray-500 leading-normal pl-7">Streamlining complex logistics through a single, reliable point of contact for all production needs.</p>
+</div>
+<div class="p-3 bg-background-dark/50 border border-panel-border rounded-lg group hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-3 mb-1">
+<span class="material-symbols-outlined text-primary text-lg">layers</span>
+<h4 class="text-xs font-bold text-gray-200">Specialist depth on demand</h4>
+</div>
+<p class="text-[10px] text-gray-500 leading-normal pl-7">Accessing industry-leading expertise within each niche without the friction of multiple suppliers.</p>
+</div>
+<div class="p-3 bg-background-dark/50 border border-panel-border rounded-lg group hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-3 mb-1">
+<span class="material-symbols-outlined text-primary text-lg">trending_up</span>
+<h4 class="text-xs font-bold text-gray-200">Land and expand growth</h4>
+</div>
+<p class="text-[10px] text-gray-500 leading-normal pl-7">Creating seamless upsell opportunities as client requirements grow from basic needs to full-scale production.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="mt-8 border-t border-panel-border bg-panel-dark/50 backdrop-blur-sm">
+<div class="max-w-[1600px] mx-auto px-4 py-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">analytics</span>
+<p class="text-[11px] font-bold text-gray-400">
+                        Prepared for <span class="text-white">Gearhouse Group</span>. Focus: qualified leads in South Africa.
+                    </p>
+</div>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-primary transition-colors" href="#brands">Brands</a>
+<a class="text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-primary transition-colors" href="#methodology">Methodology</a>
+<a class="text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-primary transition-colors" href="#">Contact Support</a>
+</nav>
+<div class="flex items-center gap-2 text-[10px] text-gray-600 font-mono">
+<span>© 2024 GEARHOUSE_AUDIT</span>
+<span class="w-1 h-1 bg-gray-700 rounded-full"></span>
+<span>DATA_ENCRYPTED</span>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

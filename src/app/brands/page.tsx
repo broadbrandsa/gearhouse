@@ -21,16 +21,24 @@ export default function BrandsIndex() {
                                     {brand.name}
                                 </h3>
                                 <div className="mt-4 grid grid-cols-2 gap-4">
-                                    <div>
-                                        <dt className="text-xs text-gray-500">LCP</dt>
-                                        <dd className="text-sm font-semibold text-gray-900">{brand.metrics.lcp}</dd>
-                                    </div>
-                                    <div>
-                                        <dt className="text-xs text-gray-500">Performance</dt>
-                                        <dd className={`text-sm font-semibold ${brand.metrics.score >= 90 ? 'text-green-600' : brand.metrics.score >= 50 ? 'text-orange-600' : 'text-red-600'}`}>
-                                            {brand.metrics.score}/100
-                                        </dd>
-                                    </div>
+                                    {brand.metrics.performance ? (
+                                        <>
+                                            <div>
+                                                <dt className="text-xs text-gray-500">Performance</dt>
+                                                <dd className={`text-sm font-semibold ${brand.metrics.performance >= 90 ? 'text-green-600' : brand.metrics.performance >= 50 ? 'text-orange-600' : 'text-red-600'}`}>
+                                                    {brand.metrics.performance}/100
+                                                </dd>
+                                            </div>
+                                            <div>
+                                                <dt className="text-xs text-gray-500">Accessibility</dt>
+                                                <dd className={`text-sm font-semibold ${brand.metrics.accessibility && brand.metrics.accessibility >= 90 ? 'text-green-600' : 'text-orange-600'}`}>
+                                                    {brand.metrics.accessibility}/100
+                                                </dd>
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <div className="col-span-2 text-xs text-gray-400 italic">No metrics available</div>
+                                    )}
                                 </div>
                             </div>
                             <div className="bg-gray-50 px-5 py-3 text-sm text-indigo-600 font-medium group-hover:bg-indigo-50 transition-colors">
