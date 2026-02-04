@@ -425,53 +425,97 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                     )}
 
                     {brand.sections.broadbrand_intervention && (
-                        <div className="mt-12 pt-12 border-t border-panel-border/30">
-                            <h3 className="text-sm font-black uppercase tracking-widest mb-8 text-white">How BroadBrand Helps Turn This Audit Into Qualified Lead Growth</h3>
+                        <section className="mt-20 bg-gradient-to-br from-[#1A1D21] to-[#141619] border border-panel-border/60 rounded-2xl overflow-hidden shadow-2xl relative group">
+                            {/* Ambient Glow */}
+                            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -mr-32 -mt-32 pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity duration-1000"></div>
 
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
-                                <div>
-                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-3">Current Growth Constraint</h4>
-                                    <p className="text-sm text-gray-300 leading-relaxed whitespace-pre-wrap">
-                                        {brand.sections.broadbrand_intervention.constraint}
-                                    </p>
+                            <div className="p-8 md:p-12 relative z-10">
+                                {/* Header */}
+                                <div className="flex flex-col md:flex-row md:items-center gap-6 mb-12">
+                                    <div className="h-14 w-14 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20 shrink-0 transform group-hover:scale-105 transition-transform duration-500">
+                                        <span className="material-symbols-outlined text-background-dark text-2xl font-black">bolt</span>
+                                    </div>
+                                    <div className="space-y-1">
+                                        <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-white">BroadBrand Intervention</h3>
+                                        <p className="text-xs md:text-sm text-primary font-bold tracking-[0.2em] uppercase flex items-center gap-2">
+                                            Turning Audit into Lead Growth
+                                            <span className="h-px w-8 bg-primary/50 inline-block"></span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-3">BroadBrand Intervention</h4>
-                                    <p className="text-sm text-gray-300 leading-relaxed whitespace-pre-wrap">
-                                        {brand.sections.broadbrand_intervention.intervention}
-                                    </p>
-                                </div>
-                            </div>
 
-                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
-                                <div className="lg:col-span-7">
-                                    <h4 className="text-[10px] font-bold text-primary uppercase mb-4">How BroadBrand Supports This in Practice</h4>
-                                    <ul className="space-y-6">
+                                {/* Problem / Solution Matrix */}
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-panel-border/60 rounded-2xl overflow-hidden mb-12 shadow-lg">
+                                    {/* Constraint Box */}
+                                    <div className="bg-[#111316] p-8 md:p-10 border-b md:border-b-0 md:border-r border-panel-border/60 relative">
+                                        <div className="flex items-center gap-3 mb-6">
+                                            <div className="h-2 w-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.6)]"></div>
+                                            <h4 className="text-xs font-black text-red-500/90 uppercase tracking-[0.2em]">Current Constraint</h4>
+                                        </div>
+                                        <p className="text-sm md:text-base text-gray-400 leading-loose italic">
+                                            "{brand.sections.broadbrand_intervention.constraint}"
+                                        </p>
+                                    </div>
+
+                                    {/* Intervention Box */}
+                                    <div className="bg-primary/5 p-8 md:p-10 relative">
+                                        {/* Connector Arrow for Desktop */}
+                                        <div className="absolute top-1/2 -left-4 -translate-y-1/2 w-8 h-8 bg-primary rounded-full items-center justify-center hidden md:flex z-20 shadow-xl border-4 border-[#141619]">
+                                            <span className="material-symbols-outlined text-sm text-background-dark font-black">arrow_forward</span>
+                                        </div>
+
+                                        <div className="flex items-center gap-3 mb-6">
+                                            <div className="h-2 w-2 rounded-full bg-primary shadow-[0_0_8px_rgba(var(--primary-rgb),0.6)]"></div>
+                                            <h4 className="text-xs font-black text-primary uppercase tracking-[0.2em]">Strategic Turnaround</h4>
+                                        </div>
+                                        <p className="text-sm md:text-base text-gray-100 leading-loose font-medium">
+                                            {brand.sections.broadbrand_intervention.intervention}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Practical Support Grid */}
+                                <div className="mb-12">
+                                    <h4 className="text-[10px] font-black text-gray-500 uppercase tracking-[0.2em] mb-6 pl-1">Practical Execution Vectors</h4>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                         {brand.sections.broadbrand_intervention.practical_support.map((item, idx) => (
-                                            <li key={idx}>
-                                                <h5 className="text-xs font-bold text-white mb-1">{item.title}</h5>
-                                                <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
-                                            </li>
+                                            <div key={idx} className="bg-[#181B1F] border border-panel-border/50 p-6 rounded-xl hover:border-primary/40 hover:bg-[#1C2025] transition-all duration-300 group/card">
+                                                <div className="flex items-start gap-3 mb-3">
+                                                    <span className="text-primary/40 group-hover/card:text-primary transition-colors text-xs font-mono">0{idx + 1}</span>
+                                                    <h5 className="text-sm font-bold text-gray-200 group-hover/card:text-white transition-colors">{item.title}</h5>
+                                                </div>
+                                                <p className="text-xs text-gray-500 leading-relaxed group-hover/card:text-gray-400 transition-colors pl-6">
+                                                    {item.description}
+                                                </p>
+                                            </div>
                                         ))}
-                                    </ul>
+                                    </div>
                                 </div>
-                                <div className="lg:col-span-5">
-                                    <div className="bg-background-dark/30 border border-panel-border rounded-lg p-6">
-                                        <h4 className="text-[10px] font-bold text-primary uppercase mb-4 flex items-center gap-2">
-                                            <span className="material-symbols-outlined text-sm">published_with_changes</span> Resulting Shift in Lead Quality
+
+                                {/* Lead Quality Shift Banner */}
+                                <div className="bg-gradient-to-r from-emerald-900/10 to-transparent border border-emerald-500/20 rounded-2xl p-8 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden">
+                                    <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-emerald-500/50 to-emerald-500/10"></div>
+
+                                    <div className="flex-shrink-0 h-16 w-16 bg-emerald-500/10 rounded-full flex items-center justify-center border border-emerald-500/20 shadow-lg shadow-emerald-500/5">
+                                        <span className="material-symbols-outlined text-2xl text-emerald-400">trending_up</span>
+                                    </div>
+
+                                    <div className="flex-grow w-full">
+                                        <h4 className="text-emerald-400 font-bold uppercase text-[10px] tracking-[0.2em] mb-4 flex items-center gap-2">
+                                            Projected Outcome <span className="h-px bg-emerald-500/30 flex-grow"></span>
                                         </h4>
-                                        <ul className="space-y-3">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8">
                                             {brand.sections.broadbrand_intervention.lead_quality_shift.map((outcome, idx) => (
-                                                <li key={idx} className="flex items-start gap-3 text-sm text-gray-300">
-                                                    <span className="material-symbols-outlined text-primary text-base leading-none translate-y-0.5">arrow_forward</span>
-                                                    <span>{outcome}</span>
-                                                </li>
+                                                <div key={idx} className="flex items-start gap-3 group/outcome">
+                                                    <span className="material-symbols-outlined text-emerald-500 text-sm mt-0.5 group-hover/outcome:translate-x-1 transition-transform">check_circle</span>
+                                                    <span className="text-sm text-gray-200 font-medium">{outcome}</span>
+                                                </div>
                                             ))}
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     )}
                     <div className="mt-12 pt-12 border-t border-panel-border/30 flex justify-between gap-8">
                         <div>
