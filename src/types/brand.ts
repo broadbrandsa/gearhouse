@@ -18,6 +18,15 @@ export interface BrandGap {
     improvement_opportunity?: string;
 }
 
+export interface BrandSocialPresence {
+    intro: string;
+    observed: string[];
+    doing_well: string[];
+    limits_growth: string[];
+    lead_quality: string[];
+    recommended_role: string[];
+}
+
 export interface BrandSections {
     overview: string; // Used for header description
     what_delivers?: string; // Specific "What this brand delivers" text
@@ -48,6 +57,7 @@ export interface BrandSections {
     };
     decision_context?: string; // New section 1
     brand_limitations?: string; // New section 2
+    social_presence?: BrandSocialPresence;
     lead_growth_recommendations?: {
         overview: string;
         focus_areas: string[];

@@ -10,118 +10,121 @@
     "seo": 92
   },
   "sections": {
-    "overview": "Gearhouse is the primary entry point into the group, positioned to take ownership of complex event, venue, and production challenges by bringing the right specialists together across its operating companies.",
-    "what_delivers": "Gearhouse delivers end-to-end technical production capability for live events, venues, broadcast environments, and large-scale activations. Its core value is not any single service, but the ability to take full responsibility for delivery across multiple disciplines, suppliers, and operational risks.\n\nFor buyers, Gearhouse represents a reduction in coordination complexity, supplier risk, and things going wrong, particularly in high-stakes or time-critical environments.",
-    "how_it_fits": "Gearhouse is the umbrella brand and should function as the group’s main lead driver. While specialist brands provide depth and category expertise, Gearhouse is the brand that should attract problem-level demand and turn it into a clear plan and deliver it using the group’s internal capabilities.\n\nIn practice, Gearhouse is the “front door” through which many clients should enter, even if the initial requirement ultimately maps to a specialist solution.",
+    "overview": "Gearhouse is the primary entry point into the Gearhouse Group, taking ownership of complex, high-risk production challenges across live events, venues, and broadcast environments in South Africa.\n\nWhen delivery matters, timelines are tight, and failure carries reputational or financial risk, Gearhouse brings the right people, systems, and specialist capability together under one accountable delivery model.",
+    "what_delivers": "Gearhouse delivers end-to-end technical production across large-scale live events, venues, and broadcast environments. This includes planning, equipment, crew, coordination, and on-site execution.\n\nIts value is not any single service, but the ability to take responsibility for delivery across multiple disciplines. Gearhouse reduces the risk that comes from managing many suppliers by acting as one accountable production partner, especially in high-pressure or high-visibility environments.",
+    "how_it_fits": "Gearhouse is the umbrella brand and main lead driver for the group. It is the front door through which complex or uncertain briefs should enter.\n\nWhen deeper specialist capability is required, group companies such as structures, LED, seating, scenic build, venue technical management, or communications plug in as internal extensions of the same delivery model, not as separate vendors.",
     "discovery_patterns": [
       {
         "title": "Problem-led search",
-        "description": "Buyers typically arrive when a brief becomes too complex, risky, or fragmented to manage through multiple standalone suppliers. This often coincides with increased scale, visibility, or consequence of failure.",
+        "description": "Buyers arrive when projects become too complex, too visible, or too risky to manage through multiple suppliers.",
         "icon": "manage_search"
       },
       {
-        "title": "Referrals and repeat engagements",
-        "description": "A significant portion of demand is driven by prior delivery success, internal referrals, and industry word-of-mouth, especially in environments where reliability outweighs price sensitivity.",
+        "title": "Referrals and repeat work",
+        "description": "Strong demand comes from agencies, producers, and clients who prioritise reliability and have experienced Gearhouse delivery before.",
         "icon": "diversity_3"
       },
       {
-        "title": "Credibility validation",
-        "description": "Buyers often arrive with awareness already established and use the website to validate scale, experience, and capability before initiating direct contact.",
+        "title": "Website validation",
+        "description": "The website is used to confirm scale, credibility, and capability before initiating a scoped conversation.",
         "icon": "verified"
       }
     ],
     "how_buyers_find": "See discovery patterns",
     "priority_channels": [
       {
-        "channel": "Website",
-        "action": "Action: Add simpler audience-led entry points and outcomes-based proof."
+        "channel": "Website - Primary Channel",
+        "action": "Action: Add clearer audience-led entry points and outcome-focused proof that shows Gearhouse as the accountable delivery partner."
       },
       {
-        "channel": "LinkedIn",
-        "action": "Action: Share leadership perspectives on risk, scale, and accountability."
+        "channel": "Direct & Proposal-Led Engagement - Primary Channel",
+        "action": "Action: Standardise proposal language and capability packs to frame Gearhouse as the owner of delivery, not a collection of services."
+      },
+      {
+        "channel": "LinkedIn - Supporting Channel",
+        "action": "Action: Share delivery proof, behind-the-scenes execution, and credibility signals aimed at senior decision-makers."
       }
     ],
     "target_audience": {
-      "primary": "Senior decision-makers responsible for high-risk, high-visibility delivery, including corporate event leads, agencies, broadcasters, venue operators, and public-sector stakeholders.",
-      "motivators": "These buyers are motivated by risk reduction, accountability, and outcome certainty. They choose Gearhouse when the cost of failure outweighs the cost of consolidation. A single accountable partner reduces internal friction and reputational exposure.",
+      "primary": "Senior decision-makers responsible for high-risk delivery, including agencies, corporates, broadcasters, venue operators, and public-sector stakeholders.",
+      "motivators": "These buyers prioritise risk reduction, accountability, and certainty. They choose Gearhouse when the cost of failure outweighs the cost of consolidation.",
       "validation_channels": [
-        "Peer reputation and referrals",
+        "Peer referrals and industry reputation",
         "Website credibility and scale signals",
-        "Leadership reassurance and group track record"
+        "Confidence in group backing and delivery history"
       ],
       "lead_quality": "High-quality leads are complex, solution-led, and rarely price-driven. Conversion depends on confidence, not persuasion."
     },
+    "decision_context": "Buyers are deciding whether to coordinate multiple suppliers themselves or appoint one team to take full responsibility for delivery.\n\nThis is a decision about accountability, risk, and reputation. When failure is expensive, Gearhouse becomes the safer option.",
     "current_presence": "See How it fits",
     "gaps_improvements": [
       {
-        "gap": "Umbrella value framed around services, not buyer outcomes",
-        "impact": "Buyers selecting an umbrella partner are often motivated by fear of failure, reputational risk, or coordination breakdown, not by service availability alone.",
-        "improvement_opportunity": "Explicitly articulate Gearhouse as the “single accountable partner” and risk-absorbing partner, rather than a collection of services."
+        "gap": "Umbrella value framed around services, not outcomes",
+        "impact": "The core value is not being communicated as accountable ownership of delivery risk.",
+        "improvement_opportunity": "Reframe Gearhouse as the partner that absorbs delivery risk and owns outcomes."
       },
       {
         "gap": "No guided journeys for different buyer types",
-        "impact": "Different buyers have different decision criteria, approval processes, and risk sensitivities. Without guidance, some will struggle to quickly see relevance.",
-        "improvement_opportunity": "Introduce clearer audience-led framing that helps buyers self-identify and understand how Gearhouse supports their specific context."
+        "impact": "Different audiences are not clearly guided to relevant entry points.",
+        "improvement_opportunity": "Add simple audience-led routes (agency, corporate, venue, broadcast)."
       },
       {
-        "gap": "Specialist brands not clearly positioned as an internal system",
-        "impact": "Buyers may still perceive risk associated with multi-supplier coordination, even when those suppliers sit within the same group.",
-        "improvement_opportunity": "Reinforce the idea that specialist brands are internal extensions of one delivery model, not separate vendors."
+        "gap": "Group strength implied, not explained",
+        "impact": "Buyers may not understand how specialist capabilities connect in one model.",
+        "improvement_opportunity": "Clearly show how specialist brands operate as one internal system."
       },
       {
-        "gap": "Proof exists, but is not structured as decision support",
-        "impact": "Many Gearhouse engagements require internal buy-in from finance, procurement, or executive stakeholders.",
-        "improvement_opportunity": "Structure proof to support internal justification, not just external reassurance."
+        "gap": "Proof not structured for decision support",
+        "impact": "Evidence is less useful for internal stakeholder approval.",
+        "improvement_opportunity": "Present proof to support internal approval, not just reassurance."
       }
     ],
-    "brand_limitations": "Gearhouse should not position itself as a commodity service provider or compete on isolated line-item pricing. Its strength lies in orchestration, accountability, and scale, not in tactical execution alone.",
+    "brand_limitations": "Gearhouse should not compete as a commodity supplier or on line-item pricing.\n\nIts strength is accountability, coordination, and scale, not isolated execution tasks.",
     "performance_leakage": "The site demonstrates strong technical credibility and accessibility, which supports enterprise trust. Performance is acceptable but not exemplary for a high-impact conversion surface. Lead quality and conversion are more affected by clarity of positioning and buyer guidance than by technical constraints.",
     "additional_channels": [
       "Audit Rec: No broader channel expansion required."
     ],
-    "land_expand": "Many Gearhouse clients begin with a specific problem but later encounter additional needs across staging, structures, AV, communications, or long-term infrastructure.",
+    "land_expand": "Many Gearhouse clients start with one complex problem and later require additional capability across staging, structures, AV, communications, or long-term infrastructure.\n\nGearhouse enables this expansion without adding coordination risk.",
     "lead_growth_recommendations": {
-      "overview": "Gearhouse’s lead growth opportunity lies in positioning itself as the point where fragmented supplier models stop working. Demand should be attracted at the moment clients realise that complexity, risk, and accountability can no longer be managed through coordination alone.",
+      "overview": "Gearhouse grows when it attracts briefs where delivery risk can no longer be managed through coordination alone.",
       "focus_areas": [
-        "Establish Gearhouse as the default entry point for complex, high-stakes briefs",
+        "Establish Gearhouse as the default entry point for complex briefs",
         "Shift messaging from services provided to responsibility assumed",
-        "Create intentional pathways from group-level engagement into specialist brands"
+        "Create intentional pathways into specialist group brands"
       ],
-      "channel_copy": "This messaging should primarily live at the group level, across the main Gearhouse website and senior-facing touchpoints. It should be used selectively in channels where decision-makers seek reassurance rather than discovery, such as direct outreach, proposal framing, and targeted visibility to senior stakeholders. Copy should focus on owning outcomes, absorbing risk, and simplifying delivery, rather than enumerating capabilities. The role of content is to build confidence, not generate volume.",
+      "channel_copy": "This messaging should live primarily on the Gearhouse website and in senior-facing touchpoints such as proposals and direct engagement.\n\nThe role of content is to build confidence and reduce perceived risk, not to generate high enquiry volume.",
       "expected_outcomes": [
-        "Earlier engagement in complex briefs before supplier structures are fixed",
-        "Higher-quality enquiries that naturally span multiple group capabilities",
-        "Reduced price sensitivity through clearer accountability and risk transfer"
+        "Earlier engagement before supplier structures are fixed",
+        "Higher-quality, multi-discipline enquiries",
+        "Reduced price sensitivity through clearer accountability"
       ]
     },
-    "broadbrand_intervention": {
-      "constraint": "Gearhouse is trusted for delivery at scale, but is often engaged after clients have already fragmented responsibility across multiple suppliers.\n\nBy the time Gearhouse enters the conversation, complexity, risk, and accountability are already high, limiting its ability to shape the overall solution from the outset.\n\nThis positions Gearhouse as an integrator of complexity rather than the default entry point that removes it.",
-      "intervention": "BroadBrand would help reposition Gearhouse as the starting point for complex, high-stakes briefs by reframing its role around accountability, risk ownership, and simplification.\n\nWe would translate Gearhouse’s full-stack capability into clearer, problem-led narratives that resonate at executive and procurement level, where responsibility and outcome ownership matter most.\n\nThis includes structuring group-level messaging so specialist brands are positioned as deliberate extensions of a single accountable delivery model.",
-      "practical_support": [
-        {
-          "title": "Group Positioning & Narrative Architecture",
-          "description": "Defining Gearhouse as the single point of accountability for complex delivery, not just a collection of services."
-        },
-        {
-          "title": "Audience & Decision-Maker Intelligence",
-          "description": "Mapping senior buyer motivations around risk, oversight, and delivery certainty to guide group-level messaging."
-        },
-        {
-          "title": "Journey & Demand Architecture",
-          "description": "Designing clear entry points that allow clients to engage early before supplier structures are fixed."
-        },
-        {
-          "title": "Creative & Message Optimisation (CreativePlus)",
-          "description": "Continuously refining group narratives that reinforce trust, scale, and outcome ownership."
-        },
-        {
-          "title": "Measurement & Outcome Ownership",
-          "description": "Optimising against qualified, multi-discipline opportunities rather than enquiry volume."
-        }
+    "social_presence": {
+      "intro": "Gearhouse's social content mainly acts as proof of delivery, showing real work, scale, and on-the-ground execution.",
+      "observed": [
+        "Content leans heavily on real events, scale, and technical execution",
+        "Imagery shows lighting, audio, screens, staging, and crew in live environments",
+        "Posts function more as proof of capability than buyer guidance"
       ],
-      "lead_quality_shift": [
-        "Gearhouse would engage earlier, with higher-value briefs that naturally span multiple capabilities.",
-        "Leads would arrive pre-aligned to outcome ownership, reducing fragmentation and increasing commercial leverage."
+      "doing_well": [
+        "Strong credibility signals through real-world delivery",
+        "Demonstrates experience in high-pressure, high-visibility environments",
+        "Reinforces trust with industry-aware audiences"
+      ],
+      "limits_growth": [
+        "Limited explanation of why Gearhouse should be engaged early",
+        "Weak framing around accountability, risk reduction, and coordination",
+        "Assumes buyers already understand Gearhouse's role in the group"
+      ],
+      "lead_quality": [
+        "Enquiries tend to skew toward delivery-stage requests",
+        "Many buyers arrive after key decisions are already set",
+        "Leads are often execution-focused rather than outcome-led"
+      ],
+      "recommended_role": [
+        "Reinforce Gearhouse as the single accountable delivery partner",
+        "Build confidence for early-stage conversations, not high-volume leads",
+        "Support credibility and reassurance for complex briefs"
       ]
     }
   }

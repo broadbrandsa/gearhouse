@@ -101,33 +101,61 @@
       ]
     },
     "broadbrand_intervention": {
-      "constraint": "Splitbeam’s lead quality is strong, but discovery is heavily relationship-led and assumes prior understanding of long-term rental benefits.\n\nThis limits growth to existing networks and slows adoption among adjacent buyers experiencing the same operational pain.",
-      "intervention": "BroadBrand would help reframe Splitbeam’s offering around predictability, lifecycle cost control, and operational stability.\n\nMessaging would contrast long-term rental against short-term hire, helping buyers self-identify earlier in the decision journey.\n\nThis would be done without expanding channels, focusing on clarity within existing validation touchpoints.",
+      "constraint": "Splitbeam’s growth is largely driven by existing relationships.\n\nThis assumes buyers already understand the value of long-term rental.",
+      "intervention": "BroadBrand would update Splitbeam’s website copy to clearly explain when long-term rental is a better option than short-term hire or ownership.\n\nMessaging would help buyers recognise their operational challenges earlier.",
       "practical_support": [
         {
-          "title": "Positioning & Message Architecture",
-          "description": "Clear articulation of long-term rental as a strategic operating decision."
+          "title": "Website education",
+          "description": "Explain long-term rental in simple, practical terms."
         },
         {
-          "title": "Audience Intelligence",
-          "description": "Mapping theatre, education, and long-run production motivators."
+          "title": "Audience clarity",
+          "description": "Address theatres, schools, and long-run productions separately."
         },
         {
-          "title": "Journey Design",
-          "description": "Accelerating movement from enquiry to partnership discussion."
+          "title": "Enquiry flow improvement",
+          "description": "Guide users toward partnership discussions rather than quick quotes."
         },
         {
-          "title": "Creative Optimisation (CreativePlus)",
-          "description": "Iterating copy that reinforces trust and continuity."
+          "title": "Creative refinement (CreativePlus)",
+          "description": "Use trust-focused copy that reinforces continuity."
         },
         {
-          "title": "Outcome Measurement",
-          "description": "Optimising against lifetime value, not lead volume."
+          "title": "Measurement",
+          "description": "Track lead intent and lifetime value."
         }
       ],
       "lead_quality_shift": [
-        "Earlier, better-qualified enquiries.",
-        "Higher lifetime value without increased volume."
+        "Earlier, better-qualified enquiries",
+        "Higher lifetime value without increased volume"
+      ]
+    },
+    "social_presence": {
+      "intro": "Splitbeam's social presence is rooted in theatre culture and production work, reinforcing specialist credibility in performance environments.",
+      "observed": [
+        "Content is strongly centred on theatre productions and performance contexts",
+        "Posts highlight craft, precision, and specialist equipment",
+        "Messaging assumes familiarity with theatre workflows"
+      ],
+      "doing_well": [
+        "Strong resonance with theatre professionals",
+        "Reinforces specialist credibility and trust",
+        "Shows clear relevance to long-run productions"
+      ],
+      "limits_growth": [
+        "Assumes buyers already understand long-term rental benefits",
+        "Limited explanation of when rental is a better decision than short-term hire",
+        "Discovery can stay contained within existing theatre networks"
+      ],
+      "lead_quality": [
+        "Leads are often highly aligned, but volume is constrained",
+        "Enquiries tend to come from informed buyers or referrals",
+        "Growth into adjacent buyer groups can be slower"
+      ],
+      "recommended_role": [
+        "Educate adjacent buyers on long-term rental value (predictability and stability)",
+        "Help buyers self-identify earlier with clear \"when this is right for you\" cues",
+        "Maintain theatre credibility while widening relevance beyond existing circles"
       ]
     }
   }

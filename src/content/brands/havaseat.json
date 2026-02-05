@@ -96,34 +96,62 @@
       ]
     },
     "broadbrand_intervention": {
-      "constraint": "Havaseat risks being evaluated as a seating supplier rather than engineered infrastructure.\n\nThis increases price sensitivity and commoditisation.",
-      "intervention": "BroadBrand would reinforce Havaseat’s role as a compliance-critical, safety-driven infrastructure partner.\n\nMessaging would align with decision-makers motivated by risk avoidance and audience experience.",
+      "constraint": "Havaseat is often evaluated as a seating supplier rather than engineered audience infrastructure.\n\nThis increases price comparison and reduces focus on safety, compliance, and experience.",
+      "intervention": "BroadBrand would reposition Havaseat through website and sales copy as engineered audience infrastructure.\n\nMessaging would focus on safety standards, compliance, and reducing public-event risk.",
       "practical_support": [
         {
-          "title": "Positioning & Message Architecture",
-          "description": "Safety, compliance, and engineering authority."
+          "title": "Website copy updates",
+          "description": "Emphasise safety, compliance, and engineered design over product features."
         },
         {
-          "title": "Audience Intelligence",
-          "description": "Understanding event safety and compliance drivers."
+          "title": "Decision-maker focus",
+          "description": "Write for organisers and compliance-focused roles, not procurement alone."
         },
         {
-          "title": "Journey Design",
-          "description": "Engagement before procurement commoditisation."
+          "title": "Early-stage positioning",
+          "description": "Encourage engagement during event planning, not only after layouts are finalised."
         },
         {
-          "title": "Creative Optimisation (CreativePlus)",
-          "description": "Authority-focused, reassurance-led creative."
+          "title": "Creative refinement (CreativePlus)",
+          "description": "Use calm, authoritative messaging that reassures rather than sells."
         },
         {
-          "title": "Outcome Measurement",
-          "description": "Optimising for compliance-driven leads."
+          "title": "Measurement",
+          "description": "Track enquiries where safety and compliance are stated drivers."
         }
       ],
       "lead_quality_shift": [
-        "Higher-quality engagements.",
-        "Lower price sensitivity.",
-        "Stronger specialist positioning."
+        "Higher-quality, compliance-driven enquiries",
+        "Reduced price-led conversations",
+        "Stronger specialist positioning"
+      ]
+    },
+    "social_presence": {
+      "intro": "Havaseat's social presence consistently shows seating systems and installs, reinforcing safety, strength, and crowd readiness.",
+      "observed": [
+        "Content shows installed seating systems and build detail",
+        "Messaging focuses on strength, safety, and reliability",
+        "Visual identity is consistent and product-led"
+      ],
+      "doing_well": [
+        "Clear signals around engineered infrastructure and compliance",
+        "Reinforces trust for large-audience environments",
+        "Makes the core product easy to understand"
+      ],
+      "limits_growth": [
+        "Limited explanation of planning-stage value and risk reduction",
+        "Less emphasis on the role seating plays in overall audience experience",
+        "Few cues that encourage early engagement before layouts are fixed"
+      ],
+      "lead_quality": [
+        "Leads can be logistics- or price-driven",
+        "Enquiries may come once venue decisions are already made",
+        "Reduced ability to influence broader outcomes"
+      ],
+      "recommended_role": [
+        "Position seating as a foundation for safety and audience experience",
+        "Encourage early planning conversations (before procurement commoditises the decision)",
+        "Provide proof that supports buyer justification beyond price"
       ]
     }
   }

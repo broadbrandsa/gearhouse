@@ -96,34 +96,62 @@
       ]
     },
     "broadbrand_intervention": {
-      "constraint": "In2Structures is often engaged only after structural risk has already materialised.\n\nThis positions the brand as corrective rather than preventative.",
-      "intervention": "BroadBrand would reframe In2Structures as a design-stage safeguard and leadership-level decision.\n\nMessaging would emphasise accountability, compliance, and foresight.",
+      "constraint": "In2Structures is often contacted once structural challenges have already been identified.\n\nThis limits its ability to influence early design decisions.",
+      "intervention": "BroadBrand would reposition In2Structures as a planning-stage partner through clearer website and proposal messaging.\n\nThe focus would be on safety, compliance, and reducing rework.",
       "practical_support": [
         {
-          "title": "Positioning & Message Architecture",
-          "description": "Preventative risk framing."
+          "title": "Website positioning",
+          "description": "Frame structural input as preventative rather than corrective."
         },
         {
-          "title": "Audience Intelligence",
-          "description": "Understanding engineering, compliance, and leadership motivators."
+          "title": "Buyer language",
+          "description": "Address engineers, technical directors, and compliance stakeholders directly."
         },
         {
-          "title": "Journey Design",
-          "description": "Earlier inclusion in planning phases."
+          "title": "Planning-phase visibility",
+          "description": "Encourage engagement before designs are locked."
         },
         {
-          "title": "Creative Optimisation (CreativePlus)",
-          "description": "Authority-driven, trust-led content."
+          "title": "Creative refinement (CreativePlus)",
+          "description": "Use authority-led, factual content."
         },
         {
-          "title": "Outcome Measurement",
-          "description": "Optimising for early-stage inclusion."
+          "title": "Measurement",
+          "description": "Track early-stage technical consultations."
         }
       ],
       "lead_quality_shift": [
-        "More proactive engagements.",
-        "Higher project quality.",
-        "Stronger authority positioning."
+        "More proactive engagements",
+        "Better-defined projects",
+        "Stronger authority positioning"
+      ]
+    },
+    "social_presence": {
+      "intro": "In2Structures' social content shows real builds and installs, signalling hands-on engineering capability and physical scale.",
+      "observed": [
+        "Content shows structures being built, installed, and used",
+        "Visuals emphasise physical scale and engineering execution",
+        "Behind-the-scenes build activity is a recurring theme"
+      ],
+      "doing_well": [
+        "Conveys authenticity and real-world expertise",
+        "Reinforces confidence in safety-critical environments",
+        "Demonstrates that projects are delivered by experienced crews"
+      ],
+      "limits_growth": [
+        "Limited framing around early planning and prevention",
+        "Content can appear \"late-stage\", after a structure decision is made",
+        "Less clarity on how In2Structures reduces risk before it materialises"
+      ],
+      "lead_quality": [
+        "Leads may skew urgent or reactive",
+        "Buyers can arrive once constraints are already set",
+        "Reduced ability to influence early design-stage decisions"
+      ],
+      "recommended_role": [
+        "Encourage earlier engagement by framing structures as a design-stage safeguard",
+        "Highlight decision cues tied to compliance, accountability, and foresight",
+        "Keep proof practical while making the \"why now\" clearer"
       ]
     }
   }

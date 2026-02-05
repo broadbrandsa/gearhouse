@@ -2,6 +2,7 @@ import { getAllBrands, getBrandBySlug } from '@/lib/brands';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import SiteHeader from '@/components/SiteHeader';
+import SocialPresenceSection from '@/components/brands/SocialPresenceSection';
 
 export async function generateStaticParams() {
     const brands = getAllBrands();
@@ -138,6 +139,13 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                         )}
                     </div>
                 </section>
+
+                {brand.sections.social_presence && (
+                    <SocialPresenceSection
+                        brandName={brand.name}
+                        content={brand.sections.social_presence}
+                    />
+                )}
 
                 <section className="bg-panel-dark border border-panel-border rounded-xl overflow-hidden" id="priority">
                     <div className="px-6 py-4 border-b border-panel-border flex items-center justify-between bg-background-dark/30">
@@ -328,28 +336,32 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2 space-y-6">
                             <p className="text-sm text-slate-gray leading-loose">
-                                Understanding {brand.name}{brand.name.endsWith('s') ? "'" : "'s"} placement within the Gearhouse Group is essential for high-level tenders. The brand serves as a specialized gateway, offering clients a high-touch, boutique service model while simultaneously providing the massive logistical security of the continent's largest technical supplier.
+                                {brand.slug === 'gearhouse'
+                                    ? 'Gearhouse serves as the gateway into the full Gearhouse Group. Clients benefit from a high-touch local delivery team backed by the depth, redundancy, and scale of a continental technical production group.'
+                                    : `Understanding ${brand.name}${brand.name.endsWith('s') ? "'" : "'s"} placement within the Gearhouse Group is essential for high-level tenders. The brand serves as a specialized gateway, offering clients a high-touch, boutique service model while simultaneously providing the massive logistical security of the continent's largest technical supplier.`}
                             </p>
-                            <div className="bg-primary/5 border border-primary/20 p-6 rounded-xl">
-                                <span className="text-[10px] font-black uppercase text-primary block mb-2 tracking-widest">Growth Loop: Land, Expand, Retain</span>
-                                <div className="grid grid-cols-3 gap-4 pt-2">
-                                    <div className="text-center p-3 bg-background-dark rounded border border-panel-border">
-                                        <span className="material-symbols-outlined text-primary mb-2">anchor</span>
-                                        <div className="text-[10px] font-black uppercase mb-1">Land</div>
-                                        <div className="text-[9px] text-gray-500">Niche Lead</div>
-                                    </div>
-                                    <div className="text-center p-3 bg-background-dark rounded border border-panel-border">
-                                        <span className="material-symbols-outlined text-primary mb-2">add_circle</span>
-                                        <div className="text-[10px] font-black uppercase mb-1">Expand</div>
-                                        <div className="text-[9px] text-gray-500">Group AV & Staging</div>
-                                    </div>
-                                    <div className="text-center p-3 bg-background-dark rounded border border-panel-border">
-                                        <span className="material-symbols-outlined text-primary mb-2">sync</span>
-                                        <div className="text-[10px] font-black uppercase mb-1">Retain</div>
-                                        <div className="text-[9px] text-gray-500">Multi-Year Partners</div>
+                            {brand.slug !== 'gearhouse' && (
+                                <div className="bg-primary/5 border border-primary/20 p-6 rounded-xl">
+                                    <span className="text-[10px] font-black uppercase text-primary block mb-2 tracking-widest">Growth Loop: Land, Expand, Retain</span>
+                                    <div className="grid grid-cols-3 gap-4 pt-2">
+                                        <div className="text-center p-3 bg-background-dark rounded border border-panel-border">
+                                            <span className="material-symbols-outlined text-primary mb-2">anchor</span>
+                                            <div className="text-[10px] font-black uppercase mb-1">Land</div>
+                                            <div className="text-[9px] text-gray-500">Niche Lead</div>
+                                        </div>
+                                        <div className="text-center p-3 bg-background-dark rounded border border-panel-border">
+                                            <span className="material-symbols-outlined text-primary mb-2">add_circle</span>
+                                            <div className="text-[10px] font-black uppercase mb-1">Expand</div>
+                                            <div className="text-[9px] text-gray-500">Group AV & Staging</div>
+                                        </div>
+                                        <div className="text-center p-3 bg-background-dark rounded border border-panel-border">
+                                            <span className="material-symbols-outlined text-primary mb-2">sync</span>
+                                            <div className="text-[10px] font-black uppercase mb-1">Retain</div>
+                                            <div className="text-[9px] text-gray-500">Multi-Year Partners</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            )}
                         </div>
                     </div>
                 </section>
@@ -364,7 +376,9 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                                 <h3 className="text-xs font-black uppercase tracking-widest">Closing Audit Note</h3>
                             </div>
                             <p className="text-sm text-gray-400 leading-relaxed">
-                                The primary growth opportunity lies in <span className="text-white font-semibold">problem framing</span>. By better leveraging the Gearhouse Group identity as a security layer, {brand.name} can move from being a 'vendor' to a 'strategic production partner.'
+                                {brand.slug === 'gearhouse'
+                                    ? 'The primary growth opportunity lies in problem framing. By positioning Gearhouse as the point where fragmented supplier models stop working, the brand can attract earlier, higher-value engagements built around accountability and certainty.'
+                                    : <>The primary growth opportunity lies in <span className="text-white font-semibold">problem framing</span>. By better leveraging the Gearhouse Group identity as a security layer, {brand.name} can move from being a 'vendor' to a 'strategic production partner.'</>}
                             </p>
                         </div>
 
@@ -424,7 +438,7 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
                         </div>
                     )}
 
-                    {brand.sections.broadbrand_intervention && (
+                    {brand.slug !== 'gearhouse' && brand.sections.broadbrand_intervention && (
                         <section className="mt-20 bg-gradient-to-br from-[#1A1D21] to-[#141619] border border-panel-border/60 rounded-2xl overflow-hidden shadow-2xl relative group">
                             {/* Ambient Glow */}
                             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -mr-32 -mt-32 pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity duration-1000"></div>

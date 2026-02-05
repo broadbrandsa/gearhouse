@@ -1,6 +1,6 @@
 {
   "slug": "showcom",
-  "name": "ShowCom",
+  "name": "Showcom",
   "role_tag": "Event Communications & Connectivity Specialist",
   "logo": "/logos/showcom.png",
   "metrics": {
@@ -96,30 +96,61 @@
       ]
     },
     "broadbrand_intervention": {
-      "constraint": "ShowCom’s value is largely invisible externally and under-articulated internally.\n\nThis limits its strategic influence despite its operational importance.",
-      "intervention": "BroadBrand would formalise ShowCom’s role within the Gearhouse narrative as a coordination and risk-mitigation layer.\n\nMessaging would be embedded into group-level proposals and delivery logic.",
+      "constraint": "ShowCom’s role and value are not clearly explained on the website.\n\nThis makes it difficult for external decision-makers to understand when it should be included.",
+      "intervention": "BroadBrand would clarify ShowCom’s role by updating website copy to explain how communications support safety and live delivery.\n\nMessaging would focus on operational reliability rather than technical features.",
       "practical_support": [
         {
-          "title": "Positioning & Narrative Architecture",
-          "description": "Clarifying ShowCom’s internal strategic role."
+          "title": "Website validation content",
+          "description": "Clearly explain what ShowCom does and when it is required."
         },
         {
-          "title": "Journey Design",
-          "description": "Embedding ShowCom earlier in delivery planning."
+          "title": "Group-level positioning",
+          "description": "Show how ShowCom supports other Gearhouse services."
         },
         {
-          "title": "Creative Optimisation (CreativePlus)",
-          "description": "Internal-facing clarity and reinforcement."
+          "title": "Planning-stage explanation",
+          "description": "Describe communications as foundational rather than optional."
         },
         {
-          "title": "Outcome Measurement",
-          "description": "Optimising for consistency of inclusion."
+          "title": "Creative refinement (CreativePlus)",
+          "description": "Use simple explanations for non-technical readers."
+        },
+        {
+          "title": "Measurement",
+          "description": "Track consistency of inclusion across projects."
         }
       ],
       "lead_quality_shift": [
-        "More consistent inclusion.",
-        "Improved delivery outcomes.",
-        "Increased group-wide value contribution."
+        "Clearer understanding of ShowCom’s role",
+        "More consistent inclusion in suitable projects"
+      ]
+    },
+    "social_presence": {
+      "intro": "Showcom's content centres on live communication control and the people running it, showing real-world coordination in high-pressure environments.",
+      "observed": [
+        "Content focuses on headsets, comms control, crew, and backstage execution",
+        "People and operational environments are a consistent theme",
+        "Messaging is practical and grounded in real usage"
+      ],
+      "doing_well": [
+        "Communicates operational importance clearly",
+        "Reinforces reliability and focus under pressure",
+        "Provides credible proof in complex live environments"
+      ],
+      "limits_growth": [
+        "Limited framing of comms as risk management and accountability",
+        "Assumes buyers already understand the cost of comms failure",
+        "Less guidance for when to engage early in the planning process"
+      ],
+      "lead_quality": [
+        "Leads may be late-stage and operational",
+        "Enquiries often come once complexity is already high",
+        "Reduced ability to influence scope and structure earlier"
+      ],
+      "recommended_role": [
+        "Frame communication as a control and risk-management system",
+        "Help buyers understand \"why this matters\" without technical jargon",
+        "Encourage earlier inclusion by making planning-stage value clearer"
       ]
     }
   }

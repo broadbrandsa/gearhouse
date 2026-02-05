@@ -96,34 +96,62 @@
       ]
     },
     "broadbrand_intervention": {
-      "constraint": "System Solutions is often evaluated late in procurement cycles, once specifications and budgets are already constrained.\n\nThis limits its ability to influence system design, lifecycle value, and long-term support decisions.",
-      "intervention": "BroadBrand would reposition System Solutions earlier in the journey by aligning messaging to permanence, future-proofing, and total cost of ownership.\n\nNarratives would support internal justification, not just vendor comparison.",
+      "constraint": "System Solutions is often evaluated late in procurement, once specifications and budgets are fixed.\n\nThis limits influence over long-term system design and support decisions.",
+      "intervention": "BroadBrand would reposition System Solutions as a long-term infrastructure partner by updating how permanence, support, and lifecycle value are explained on the website.\n\nMessaging would support internal approval rather than vendor comparison.",
       "practical_support": [
         {
-          "title": "Positioning & Message Architecture",
-          "description": "Shifting focus from components to long-term systems."
+          "title": "Website messaging",
+          "description": "Shift focus from components to long-term systems."
         },
         {
-          "title": "Audience Intelligence",
-          "description": "Understanding procurement and technical approval dynamics."
+          "title": "Procurement-friendly language",
+          "description": "Support justification around durability and support."
         },
         {
-          "title": "Journey Design",
-          "description": "Engaging buyers before specs are locked."
+          "title": "Earlier engagement prompts",
+          "description": "Encourage consultation before specifications are final."
         },
         {
-          "title": "Creative Optimisation (CreativePlus)",
-          "description": "Technical, confidence-building content."
+          "title": "Creative refinement (CreativePlus)",
+          "description": "Use clear, technical but accessible explanations."
         },
         {
-          "title": "Outcome Measurement",
-          "description": "Optimising for early-stage, high-intent engagements."
+          "title": "Measurement",
+          "description": "Track early-stage, high-intent discussions."
         }
       ],
       "lead_quality_shift": [
-        "Earlier engagement.",
-        "Less price-led evaluation.",
-        "More strategic system discussions."
+        "Earlier engagement",
+        "Less price-led evaluation",
+        "More strategic system decisions"
+      ]
+    },
+    "social_presence": {
+      "intro": "System Solutions' social content showcases installed AV work and finished systems, helping buyers validate technical capability.",
+      "observed": [
+        "Content focuses on installed AV systems and permanent environments",
+        "Posts highlight equipment, finished systems, and technical detail",
+        "Visuals lean toward completed outcomes over process"
+      ],
+      "doing_well": [
+        "Demonstrates technical competence clearly",
+        "Helps specification-driven buyers validate capability",
+        "Provides visual confirmation of installation experience"
+      ],
+      "limits_growth": [
+        "Limited framing around system planning and long-term value",
+        "Little emphasis on lifecycle support or future-proofing decisions",
+        "Can make the offer feel like supply and install rather than an operating system"
+      ],
+      "lead_quality": [
+        "Leads often arrive once specifications and budgets are constrained",
+        "Enquiries can become price- and spec-led quickly",
+        "Reduced opportunity to shape scope and value earlier"
+      ],
+      "recommended_role": [
+        "Encourage earlier planning conversations before specs are locked",
+        "Frame AV as a long-term operational investment, not a component list",
+        "Provide simple proof that supports buyer justification internally"
       ]
     }
   }

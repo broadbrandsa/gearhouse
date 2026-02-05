@@ -1,6 +1,6 @@
 {
   "slug": "sds",
-  "name": "Sets Drapes Screens",
+  "name": "Sets Drapes & Screens",
   "logo": "/logos/sds.png",
   "role_tag": "Set Manufacturing & Scenic Environment Specialist",
   "metrics": {
@@ -95,34 +95,62 @@
       ]
     },
     "broadbrand_intervention": {
-      "constraint": "SDS is frequently engaged after creative ambition is already defined, limiting feasibility influence.\n\nThis increases scope pressure and execution risk.",
-      "intervention": "BroadBrand would reposition SDS as an early-stage feasibility and execution partner.\n\nMessaging would help agencies and creatives balance ambition with buildability.",
+      "constraint": "Sets Drapes Screens is often engaged once creative decisions are final.\n\nThis limits its ability to advise on feasibility and execution.",
+      "intervention": "BroadBrand would reposition SDS as a partner that helps translate ideas into buildable environments.\n\nMessaging would focus on feasibility, timelines, and execution confidence.",
       "practical_support": [
         {
-          "title": "Positioning & Message Architecture",
-          "description": "Execution confidence and feasibility framing."
+          "title": "Website messaging",
+          "description": "Explain how SDS helps make concepts buildable."
         },
         {
-          "title": "Audience Intelligence",
-          "description": "Understanding agency and production workflows."
+          "title": "Agency-focused language",
+          "description": "Support producers and creatives with practical guidance."
         },
         {
-          "title": "Journey Design",
-          "description": "Earlier creative collaboration points."
+          "title": "Earlier collaboration prompts",
+          "description": "Encourage engagement before designs are locked."
         },
         {
-          "title": "Creative Optimisation (CreativePlus)",
-          "description": "Clarity-led, execution-focused creative."
+          "title": "Creative refinement (CreativePlus)",
+          "description": "Use clarity-led, execution-focused messaging."
         },
         {
-          "title": "Outcome Measurement",
-          "description": "Optimising for repeat agency engagement."
+          "title": "Measurement",
+          "description": "Track repeat agency engagement."
         }
       ],
       "lead_quality_shift": [
-        "Better-prepared briefs.",
-        "Reduced scope creep.",
-        "Stronger repeat relationships."
+        "Better-prepared briefs",
+        "Reduced rework",
+        "Stronger repeat relationships"
+      ]
+    },
+    "social_presence": {
+      "intro": "Sets Drapes & Screens' social content is practical and behind-the-scenes, showing setups and installs in real environments.",
+      "observed": [
+        "Content is process-driven and informal",
+        "Posts show practical installs, movement, and setup activity",
+        "Branding and messaging are lighter than other group brands"
+      ],
+      "doing_well": [
+        "Authentic proof that real work is being done",
+        "Transparency builds trust for buyers who want confidence in delivery",
+        "Shows versatility across environments and jobs"
+      ],
+      "limits_growth": [
+        "Visual identity and messaging can feel inconsistent",
+        "Limited explanation of use cases and outcomes",
+        "Less differentiation from commodity suppliers"
+      ],
+      "lead_quality": [
+        "Leads can skew transactional and price-led",
+        "Buyers may not quickly understand what makes SDS the better option",
+        "Reduced perceived value when proof lacks framing"
+      ],
+      "recommended_role": [
+        "Keep authenticity, but add clearer \"what this solves\" messaging",
+        "Reinforce speed, flexibility, and reliability as differentiators",
+        "Use social as validation and proof, supported by simple buyer cues"
       ]
     }
   }

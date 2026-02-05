@@ -1,6 +1,7 @@
 {
   "slug": "ledvision",
-  "name": "LEDvision",
+  "name": "LEDVision",
+  "logo": "/logos/ledvision.png",
   "role_tag": "Daylight LED Screen Rental & Visual Display Specialist",
   "metrics": {
     "performance": 81,
@@ -95,34 +96,61 @@
       ]
     },
     "broadbrand_intervention": {
-      "constraint": "LEDvision is trusted for execution but often engaged after creative and production decisions are finalised.\n\nThis increases risk exposure and limits influence over project scope.",
-      "intervention": "BroadBrand would help shift LEDvision upstream, reinforcing its role as a planning-stage partner focused on certainty under pressure.\n\nMessaging would align LEDvision more closely with Gearhouse-led delivery narratives.",
+      "constraint": "LEDvision is often engaged after creative and production decisions are finalised.\n\nThis increases delivery pressure and limits scope influence.",
+      "intervention": "BroadBrand would adjust LEDvision’s positioning to present it as a planning-stage visual partner.\n\nMessaging would highlight reliability, redundancy, and delivery certainty.",
       "practical_support": [
         {
-          "title": "Positioning & Message Architecture",
-          "description": "Certainty, redundancy, and execution confidence framing."
+          "title": "Website copy updates",
+          "description": "Position LEDvision as a system owner rather than a screen supplier."
         },
         {
-          "title": "Audience Intelligence",
-          "description": "Understanding producer and creative decision timelines."
+          "title": "Producer-focused language",
+          "description": "Address broadcast and event risk directly."
         },
         {
-          "title": "Journey Design",
-          "description": "Earlier involvement before production lock-in."
+          "title": "Earlier engagement cues",
+          "description": "Encourage consultation during concept development."
         },
         {
-          "title": "Creative Optimisation (CreativePlus)",
-          "description": "Reassurance-led, credibility-focused creative."
+          "title": "Creative refinement (CreativePlus)",
+          "description": "Focus on confidence and execution certainty."
         },
         {
-          "title": "Outcome Measurement",
-          "description": "Optimising for scope quality, not urgency volume."
+          "title": "Measurement",
+          "description": "Track scope quality rather than urgency-driven requests."
         }
       ],
       "lead_quality_shift": [
-        "Earlier engagement.",
-        "Fewer last-minute, high-risk briefs.",
-        "Higher-value production roles."
+        "Earlier involvement",
+        "Fewer last-minute, high-risk briefs"
+      ]
+    },
+    "social_presence": {
+      "intro": "LEDVision's social content is highly visual and impact-led, showcasing finished LED outcomes and live-event scale.",
+      "observed": [
+        "Content focuses on finished LED displays and audience impact",
+        "Visuals show scale, colour, brightness, and show-ready results",
+        "Proof is strong, but planning context is light"
+      ],
+      "doing_well": [
+        "Communicates visual potential quickly",
+        "Easy for non-technical buyers to understand",
+        "Strong proof that the product performs in real environments"
+      ],
+      "limits_growth": [
+        "Limited visibility into planning-stage value and execution certainty",
+        "Content can reinforce \"LED as a feature\" more than \"LED as a system\"",
+        "Less guidance for engaging early before production lock-in"
+      ],
+      "lead_quality": [
+        "Enquiries can arrive late and under time pressure",
+        "Greater delivery risk when decisions are already finalised",
+        "Less chance to shape scope and quality upstream"
+      ],
+      "recommended_role": [
+        "Balance spectacle with confidence signals (reliability, redundancy, delivery certainty)",
+        "Create clear cues for when to engage early",
+        "Keep proof visual, but connect it to predictable outcomes"
       ]
     }
   }
