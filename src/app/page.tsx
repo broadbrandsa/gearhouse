@@ -302,7 +302,7 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary text-lg">analytics</span>
                 <p className="text-[11px] font-bold text-gray-400">
-                  Prepared for <span className="text-white">Gearhouse Group</span>. Focus: qualified leads in South Africa.
+                  Prepared for <span className="text-white">Gearhouse Group</span>.
                 </p>
               </div>
             </div>
