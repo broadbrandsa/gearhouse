@@ -4,6 +4,52 @@ import SiteHeader from '@/components/SiteHeader';
 
 export default function Home() {
   const brands = getAllBrands();
+  const socialOverview = [
+    {
+      title: "What is clearly visible across all brands",
+      points: [
+        "Social content is largely project-led, showing completed work, live builds, or installations",
+        "Visuals prioritise scale, equipment, environments, and crews at work",
+        "Posting is evidence-driven, with minimal editorial framing or narrative explanation",
+        "Engagement appears concentrated within industry and professional circles rather than broad audiences"
+      ]
+    },
+    {
+      title: "What the group's social content does well",
+      points: [
+        "Provides strong visual proof that the work is real and delivered",
+        "Reinforces technical credibility through consistency of output",
+        "Signals experience in complex, high-pressure environments without exaggeration",
+        "Supports trust for audiences who already understand the category"
+      ]
+    },
+    {
+      title: "Where social presence is limited by what is shown",
+      points: [
+        "Content rarely explains where in the project lifecycle each brand is involved",
+        "The relationship between brands is not obvious through social content alone",
+        "Social posts generally show what was built, not how decisions were made",
+        "There is little observable guidance for new or non-technical decision-makers"
+      ]
+    },
+    {
+      title: "What this means for lead quality",
+      points: [
+        "Social activity primarily supports validation, not discovery",
+        "Leads influenced by social are likely to be already informed, already close to execution, and already confident in the category",
+        "Social reinforces credibility but does not, on its own, shape earlier-stage decisions"
+      ]
+    },
+    {
+      title: "The practical role social currently plays for the group",
+      points: [
+        "Proof of delivery, not explanation of strategy",
+        "Reinforcement of trust, not persuasion",
+        "Visibility within industry, not mass awareness",
+        "A supporting asset alongside websites, proposals, and direct engagement"
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen font-sans text-foreground bg-background-dark selection:bg-primary/30">
@@ -116,6 +162,50 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+        </section>
+
+        <section className="bg-panel-dark border border-panel-border rounded-xl overflow-hidden" id="social-overview">
+          <div className="px-6 py-5 border-b border-panel-border bg-gradient-to-r from-primary/10 via-primary/5 to-transparent">
+            <h2 className="text-sm font-black uppercase tracking-widest flex items-center gap-2">
+              <span className="material-symbols-outlined text-primary">groups</span>
+              Social Overview
+            </h2>
+            <p className="text-xs text-primary font-bold uppercase tracking-wider mt-2">
+              A snapshot of how the group shows up publicly
+            </p>
+          </div>
+
+          <div className="p-6 space-y-8">
+            <div className="max-w-5xl space-y-3">
+              <p className="text-sm text-slate-gray leading-relaxed">
+                Across the Gearhouse group brands, social content consistently focuses on real delivery in real environments. The emphasis is on visible work, physical scale, and technical execution rather than commentary or explanation.
+              </p>
+              <p className="text-sm text-gray-300 font-semibold">
+                This creates a clear pattern.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {socialOverview.map((block, idx) => (
+                <article
+                  key={block.title}
+                  className={`${idx === socialOverview.length - 1 ? "md:col-span-2" : ""} bg-background-dark/40 border border-panel-border rounded-lg p-5`}
+                >
+                  <h3 className="text-[11px] font-black text-primary uppercase tracking-widest mb-3">
+                    {block.title}
+                  </h3>
+                  <ul className="space-y-2">
+                    {block.points.map((point) => (
+                      <li key={point} className="flex items-start gap-2 text-sm text-gray-300 leading-relaxed">
+                        <span className="material-symbols-outlined text-primary text-base leading-none translate-y-0.5">check_small</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
